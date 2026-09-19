@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="enep_presentation_files/libs/clipboard/clipboard.min.js"></script>
-<script src="enep_presentation_files/libs/quarto-html/tabby.min.js"></script>
-<script src="enep_presentation_files/libs/quarto-html/popper.min.js"></script>
-<script src="enep_presentation_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="enep_presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="enep_presentation_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="enep_presentation_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="enep_presentation_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="enep_presentation_files/libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
-<link href="enep_presentation_files/libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+<script src="quali_presentation_files/libs/clipboard/clipboard.min.js"></script>
+<script src="quali_presentation_files/libs/quarto-html/tabby.min.js"></script>
+<script src="quali_presentation_files/libs/quarto-html/popper.min.js"></script>
+<script src="quali_presentation_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="quali_presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="quali_presentation_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="quali_presentation_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="quali_presentation_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="quali_presentation_files/libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="quali_presentation_files/libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.55">
 
-  <meta name="author" content="André Jeremias de Souza Barbato (UFABC)">
-  <meta name="author" content="Profª Drª Patrícia Helena F. Cunha (UFABC)">
-  <title>Impacto da reforma trabalhista de 2017 na taxa de desemprego</title>
+  <meta name="author" content="Autor: André Jeremias de Souza Barbato">
+  <meta name="author" content="Orientadora: Profª Drª Patrícia Helena F. Cunha">
+  <title>Complexidade Econômica e Desigualdade de renda</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="enep_presentation_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="enep_presentation_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="quali_presentation_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="quali_presentation_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -33,11 +33,12 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="enep_presentation_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="enep_presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="enep_presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="enep_presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="enep_presentation_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="quali_presentation_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="quali_presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="quali_presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="quali_presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="quali_presentation_files/libs/revealjs/plugin/reveal-pointer/pointer.css" rel="stylesheet">
+  <link href="quali_presentation_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -328,690 +329,2267 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Impacto da reforma trabalhista de 2017 na taxa de desemprego</h1>
-  <p class="subtitle">Uma análise através da metodologia de diferenças em diferenças sintético</p>
+<section id="title-slide" data-background-color="#111111" data-background-image="img/cover.jpg" data-background-opacity="0.25" data-background-size="cover" style="color: #ffffff;" class="quarto-title-block center">
+  <h1 class="title">Complexidade Econômica e Desigualdade de renda</h1>
+  <p class="subtitle">Uma Análise a Partir das Regiões Imediatas Brasileiras entre 2003 e 2023</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-André Jeremias de Souza Barbato (UFABC) 
+<strong>Autor:</strong> André Jeremias de Souza Barbato 
 </div>
 </div>
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Profª Drª Patrícia Helena F. Cunha (UFABC) 
+<strong>Orientadora:</strong> Profª Drª Patrícia Helena F. Cunha 
 </div>
 </div>
 </div>
 
 </section>
-<section id="introdução-e-objetivos" class="slide level2">
-<h2>Introdução e Objetivos</h2>
+<section id="introdução" class="slide level2 sem-logo">
+<h2>Introdução</h2>
 <div class="fragment fade-in">
-<div class="blackbox font-small">
-<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-<div style="margin-bottom: -10px; line-height: 1;">
-<p><i class="fa-solid fa-clipboard-list fa-2x" aria-label="clipboard-list"></i></p>
+<div class="callout callout-tip no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Delimitação do Tema</strong></p>
 </div>
-<div style="margin-top: 0; padding-top: 0;">
-<em>Mercado de trabalho no final de 2025</em>
-</div>
-</div>
-<ul>
-<li class="fragment"><p>A taxa de desemprego <strong>caiu para 5,1%</strong> (5,5 milhões), o menor nível da série histórica da Pnad Contínua do IBGE;</p></li>
-<li class="fragment"><p>O nível de ocupação <strong>subiu para 59,1%</strong> (103 milhões);</p></li>
-<li class="fragment"><p>Redução da taxa de informalidade de 39% em 2024, <strong>para 38,1% em 2025</strong>;</p></li>
-<li class="fragment"><p>Remuneração média dos trabalhadores <strong>cresceu 5%</strong> em relação ao ano anterior, atingindo <strong>R$ 3.613</strong>.</p></li>
-<li class="fragment"><p><em>A reforma trabalhista de 2017 contribuiu para estes resultados?</em></p></li>
-</ul>
+<div class="callout-content">
+<p>Este projeto de pesquisa se propõe a estudar a relação entre a <strong>sofisticação da estrutura produtiva</strong> e a <strong>desigualdade de renda</strong> no nível das <strong><em>Regiões Imediatas</em></strong> no Brasil no mercado de trabalho formal, através dos microdados da Relação Anual de Informações Sociais (<strong>RAIS</strong>) fornecidos pelo Ministério do Trabalho e Emprego, no período de <strong>2003 a 2023</strong>.</p>
 </div>
 </div>
-<div style="margin-bottom: 20px;">
-
-</div>
-<div class="fragment fade-in">
-<div class="columns" style="display: flex;">
-<div class="column" style="display: flex;">
-<div class="blackbox font-small">
-<ul>
-<li class="fragment">Um relatório do <strong>FMI</strong> aponta as reformas realizadas como justificativa para as revisões positivas das estimativas de crescimento do PIB, entre elas a reforma trabalhista, que contribuiu para a <strong>redução da litigância</strong> e <strong>insegurança jurídica</strong>, o que por sua vez expandiu o <strong>emprego formal</strong> e <strong>aumento da produtividade</strong>. (Veloso, 2024)</li>
-</ul>
-</div>
-</div><div class="column" style="display: flex;">
-<div class="blackbox font-small">
-<ul>
-<li class="fragment">A reforma <strong>falhou em cumprir seus objetivos</strong> de gerar emprego e reduzir a informalidade. O cenário positivo no mercado de trabalho na verdade diz respeito ao resultado do <strong>crescimento econômico</strong> e de <strong>políticas públicas de estímulo à demand</strong>a. (Oliveira e Proni,2024)</li>
-</ul>
-</div>
-</div></div>
-</div>
-</section>
-<section id="introdução-e-objetivos-1" class="slide level2">
-<h2>Introdução e Objetivos</h2>
-<ul>
-<li class="fragment"><strong>Contexto:</strong> A Reforma Trabalhista (Lei nº 13.467/2017) entra em vigor em novembro de 2017;</li>
-</ul>
-<div class="fragment fade-in">
-<div class="columns" style="display: flex;">
-<div class="column" style="display: flex;">
-<div class="blackbox font-small">
-<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-<div style="margin-bottom: -10px; line-height: 1;">
-<p><i class="fa-solid fa-handshake fa-2x" aria-label="handshake"></i></p>
-</div>
-<div style="margin-top: 0; padding-top: 0;">
-<em>Modernização da CLT</em>
 </div>
 </div>
-<p>Estabelecer a prevalência do <strong>negociado</strong> sobre o <strong>legislado</strong> e reduzir a insegurança jurídica e litigiosidade.</p>
-</div>
-</div><div class="column" style="display: flex;">
-<div class="blackbox font-small">
-<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-<div style="margin-bottom: -10px; line-height: 1;">
-<p><i class="fa-solid fa-clock fa-2x" aria-label="clock"></i></p>
-</div>
-<div style="margin-top: 0; padding-top: 0;">
-<em>Flexibilização do Mercado</em>
-</div>
-</div>
-<p>Introduzir novos regimes como <strong>trabalho intermitente</strong>, <strong>teletrabalho</strong> e ampliação da <strong>terceirização</strong>.</p>
-</div>
-</div><div class="column" style="display: flex;">
-<div class="blackbox font-small">
-<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-<div style="margin-bottom: -10px; line-height: 1;">
-<p><i class="fa-solid fa-arrow-up-right-dots fa-2x" aria-label="arrow-up-right-dots"></i></p>
-</div>
-<div style="margin-top: 0; padding-top: 0;">
-<em>Combate à Crise</em>
-</div>
-</div>
-<p>Aumentar a <strong>produtividade</strong>, gerar <strong>novos empregos</strong> e reduzir drasticamente a <strong>informalidade</strong>.</p>
-</div>
-</div></div>
-</div>
-<div style="margin-bottom: 20px;">
-
-</div>
-<ul>
-<li class="fragment"><p><strong>Objetivo Geral:</strong> Avaliar o impacto da reforma sobre a taxa de desemprego;</p></li>
-<li class="fragment"><p><strong>Objetivos Específicos:</strong> Estimar impactos na renda média mensal de trabalhadores formais e no nível de informalidade, com recortes por gênero.</p></li>
-</ul>
-</section>
-<section id="a-determinação-do-emprego-e-reforma-trabalhista-no-brasil" class="slide level2">
-<h2>A Determinação do Emprego e Reforma Trabalhista no Brasil</h2>
 <p><br>
 </p>
-<div class="columns" style="display: flex;">
-<div class="column" style="display: flex;">
-<div class="blackbox font-small">
-<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-<div style="margin-bottom: -10px; line-height: 1;">
-<p><i class="fa-solid fa-store fa-2x" aria-label="store"></i></p>
-</div>
-<div style="margin-top: 0; padding-top: 0;">
-<em>Paradigma Neoclássico (Oferta)</em>
+<div class="fragment fade-in">
+<div class="blackbox">
+<blockquote>
+<p>A <strong>complexidade econômica</strong> captura informações sobre o nível de desenvolvimento de uma economia que são relevantes para as maneiras pelas quais uma economia gera e <strong>distribui sua renda</strong>. Além disso, (…) a <strong><em>estrutura produtiva de um país pode limitar sua extensão de desigualdade de renda</em></strong>. (Hartmann et al., 2017)</p>
+</blockquote>
 </div>
 </div>
-<ul>
-<li class="fragment"><p><em>Diagnóstico:</em> O desemprego é causado pela rigidez dos salários e preços;</p></li>
-<li class="fragment"><p><em>Solução:</em> <strong>Flexibilização</strong> dos salários, dos regimes de contratação e da jornada de trabalho podem aumentar o nível de emprego;</p></li>
-<li class="fragment"><p><em>Influência:</em> Inspirado na teoria <strong>Neoclássica</strong> e em recomendações do <strong>FMI</strong>(2016).</p></li>
-</ul>
-</div>
-</div><div class="column" style="display: flex;">
-<div class="blackbox font-small">
-<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-<div style="margin-bottom: -10px; line-height: 1;">
-<p><i class="fa-solid fa-basket-shopping fa-2x" aria-label="basket-shopping"></i></p>
-</div>
-<div style="margin-top: 0; padding-top: 0;">
-<em>Paradigma Heterodoxo (Demanda)</em>
-</div>
-</div>
-<ul>
-<li class="fragment"><p><em>Diagnóstico:</em> O desemprego é resultado da <strong>falta de demanda efetiva</strong>;</p></li>
-<li class="fragment"><p><em>Solução:</em> <strong>Políticas fiscais expansivas</strong> e <strong>investimento público</strong> seriam os mecanismos corretos para gerar emprego;</p></li>
-<li class="fragment"><p><em>Consequências:</em> A flexibilidade salarial excessiva pode gerar <strong>incerteza</strong> e <strong>reduzir o consumo</strong>, agravando a crise em vez de resolvê-la.</p></li>
-</ul>
-</div>
-</div></div>
 </section>
-<section id="principais-pontos-de-alteração-na-clt" class="slide level2">
-<h2>Principais pontos de alteração na CLT</h2>
+<section id="introdução-1" class="slide level2 sem-logo">
+<h2>Introdução</h2>
 <p><br>
 </p>
-<div style="font-size: 0.8em;">
+
+<img data-src="img/fig1_gini_e_emprego_industrial.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"></section>
+<section id="introdução-2" class="slide level2 sem-logo">
+<h2>Introdução</h2>
+
+<img data-src="img/fig2_ranking_complexidade.svg" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="arcabouço-teórico" class="slide level2 sem-logo">
+<h2>Arcabouço Teórico</h2>
+<div class="fragment fade-in">
+<div class="columns" style="display: flex;">
+<div class="column" style="display: flex;">
+<div title="Estruturalistas" style="flex-grow: 1; margin: 5px;">
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Estruturalistas</strong></p>
+</div>
+<div class="callout-content">
+<div class="fragment fade-in">
+<div>
+<ul>
+<li><strong>Raul Prebisch</strong> e <strong>Celso Furtado</strong></li>
+<li>Tese <strong>Centro-Periferia</strong></li>
+<li>Deterioração dos <strong>termos de troca</strong></li>
+<li>Mudança <strong>estrutural</strong></li>
+<li>Transferência de Mão de Obra</li>
+<li><strong>Industrialização</strong> como Sofisticação Produtiva</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="display: flex;">
+<div title="Novo Desenvolvimentismo" style="flex-grow: 1; margin: 5px;">
+<div class="callout callout-important no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Novo Desenvolvimentismo</strong></p>
+</div>
+<div class="callout-content">
+<div class="fragment fade-in">
+<div>
+<ul>
+<li>Focado em países de <strong>Renda Média</strong></li>
+<li>Rejeição da <strong>Poupança externa</strong></li>
+<li><strong>Doença Holandesa</strong></li>
+<li>Equilíbrio dos 5 preços macroeconômicos: <strong>Taxa de juros</strong>, <strong>Taxa de Câmbio</strong>, <strong>Salários</strong>, <strong>Lucros</strong> e <strong>Inflação</strong></li>
+<li>Neutralização Cambial</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="display: flex;">
+<div title="Complexidade Econômica" style="flex-grow: 1; margin: 5px;">
+<div class="callout callout-tip no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Complexidade Econômica</strong></p>
+</div>
+<div class="callout-content">
+<div class="fragment fade-in">
+<div>
+<ul>
+<li>Proposta por <strong>Hidalgo</strong> e <strong>Hausmann</strong></li>
+<li>Use de <strong>Redes Complexas</strong></li>
+<li>Dados de <strong>Comércio Internacional</strong></li>
+<li>Índice de Complexidade Econômica (<strong>ICE</strong>)</li>
+<li><strong>Diversidade</strong></li>
+<li><strong>Ubiquidade</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+<div class="fragment fade-in">
+<div width="99.99%" title="Dialogo">
+<div class="callout callout-note no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Dialogo</strong></p>
+</div>
+<div class="callout-content">
+<div class="fragment fade-in">
+<div>
+<ol type="1">
+<li>O desenvolvimento econômico como <strong>mudança estrutural</strong></li>
+<li>A concepção de <strong>centro-periferia</strong></li>
+<li>A <strong>doença holandesa</strong> como perda de complexidade econômica</li>
+<li>A perspectiva de países de <strong>renda média</strong> como <strong>medianamente complexos</strong></li>
+<li>A atuação do Estado como <strong>indutor</strong> do desenvolvimento e da complexificação econômica</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="o-que-é-uma-região-imediata" class="slide level2 sem-logo">
+<h2>O que é uma região imediata?</h2>
+<div class="fragment fade-in">
+<div title="Regiões Imediatas">
+<div class="callout callout-note no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Regiões Imediatas</strong></p>
+</div>
+<div class="callout-content">
+<p>A <strong>Região Geográfica Imediata</strong> é definida pelo <strong>IBGE (2017)</strong> como uma divisão regional que tem a <em>rede urbana</em> como seu principal elemento de referência. Elas foram estruturadas a partir de centros urbanos próximos para atender às <strong>necessidades imediatas</strong> das populações como o fluxo de pessoas em busca de <strong>trabalho</strong>, <strong>serviços de saúde</strong>, <strong>educação</strong>, <strong>compras</strong> e <strong>serviços públicos</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment fade-in">
+<div class="columns" style="display: flex;">
+<div class="column" style="display: flex;">
+<div title="Rede Urbana" style="flex-grow: 1; margin: 5px;">
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Rede Urbana</strong></p>
+</div>
+<div class="callout-content">
+<p>A <strong>rede urbana</strong> (ou rede de cidades) é o sistema articulado formado pelos centros urbanos e pelas infraestruturas de transporte e comunicação que os interligam, por onde circulam fluxos materiais e imateriais de pessoas, bens, serviços e decisões.</p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="display: flex;">
+<div title="Características" style="flex-grow: 1; margin: 5px;">
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Características</strong></p>
+</div>
+<div class="callout-content">
+<p>Respeita o limite da unidade federativa e é constituída por 5 a 25 municípios e com população de no mínimo 50.000 habitantes. Se organiza ao redor de um centro urbano principal (uma <strong>cidade-polo</strong>), que pode ser um município ou um arranjo populacional (áreas conurbadas).</p>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+<div class="fragment fade-in">
+<div title="Vantagem">
+<div class="callout callout-important no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Vantagem</strong></p>
+</div>
+<div class="callout-content">
+<p>O Brasil é divido em <strong>510 regiões imediatas</strong> que consideradas ao longo do período de <strong>2003-2023</strong> vão representar <strong>10.710 observações</strong>. A análise com base em uma agregação intermediária como as regiões imediatas, que representam regiões interconectadas, pode permitir identificar oportunidades não reveladas em dados nacionais ou estaduais.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="plataforma-dataviva" class="slide level2 sem-logo">
+<h2>Plataforma Dataviva</h2>
+<div class="fragment fade-in">
+<div class="columns" style="display: flex;">
+<div class="column" style="width:30%;">
+<div class="fragment fade-in">
+<div title="ICE-R">
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>ICE-R</strong></p>
+</div>
+<div class="callout-content">
+<p>Proposto por Freitas (2019), utiliza dados da <strong>RAIS</strong>, refletindo as capacidades produtivas presentes no território, permitindo incluir também na medida serviços não comercializáveis e manufaturas destinadas ao mercado interno.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment fade-in">
+<div title="ICA-R">
+<div class="callout callout-important no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>ICA-R</strong></p>
+</div>
+<div class="callout-content">
+<p>Possibilita identificar a sofisticação de 670 atividades econômicas (<strong>CNAE</strong>) presentes na RAIS.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment fade-in">
+<div title="Espaço de Atividade">
+<div class="callout callout-tip no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Espaço de Atividade</strong></p>
+</div>
+<div class="callout-content">
+<p>Construído a partir de uma adaptação do <em>Product Space</em>, que permite mapear a proximidade entre atividades econômicas com base na similaridade de habilidades requeridas entre diferentes setores.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="display: flex;">
+<p><img data-src="img/dataviva1.png" class="absolute" style="top: 100px; left: 500px; width: 500px; height: 350px; "></p>
+<p><img data-src="img/dataviva2.png" class="absolute fragment" style="top: 150px; left: 520px; width: 500px; height: 350px; "></p>
+<p><img data-src="img/dataviva3.png" class="absolute fragment" style="top: 200px; left: 540px; width: 500px; height: 350px; "></p>
+<p><img data-src="img/dataviva4.png" class="absolute fragment" style="top: 250px; left: 560px; width: 500px; height: 350px; "></p>
+</div></div>
+</div>
+</section>
+<section id="objetivos-e-hipóteses" class="slide level2 sem-logo">
+<h2>Objetivos e Hipóteses</h2>
+<div class="fragment fade-in">
+<div class="blackbox font-small">
+<p><i class="fa-solid fa-bullseye fa-2x" aria-label="bullseye"></i> <em>Geral:</em></p>
+<p>Apresentar o conceito de complexidade econômica e o indicador ICE-R, que traduz a sofisticação da estrutura produtiva regional. Traçar um paralelo entre a teoria da complexidade econômica e a teoria Estruturalista/Novo Desenvolvimentista, demonstrando a importância da estrutura produtiva, em especial do <strong>setor industrial</strong>, no desenvolvimento e na distribuição de renda regional. Por fim, através de dados das <strong>regiões imediatas</strong> brasileiras para o período <strong>2003-2023</strong>, investigar a relação entre o ICE-R e o coeficiente de Gini.</p>
+</div>
+</div>
+<p><br>
+</p>
+<div class="fragment fade-in">
+<div class="blackbox font-small">
+<p><i class="fa-solid fa-lightbulb fa-2x" aria-label="lightbulb"></i> <em>Hipótese:</em></p>
+<p>Partimos da hipótese de que a complexidade econômica regional se relaciona negativamente com a desigualdade de renda , ou seja, <strong><em>a complexidade reduz a desigualdade nas regiões imediatas</em></strong> no Brasil. De acordo com a literatura há evidências de que essa relação pode ser heterogênea de acordo com a região.</p>
+</div>
+</div>
+</section>
+<section id="revisão-da-literatura" class="slide level2 sem-logo smaller">
+<h2>Revisão da Literatura</h2>
+<div style="font-size: 70%;">
 <table class="caption-top">
 <colgroup>
-<col style="width: 22%">
-<col style="width: 77%">
+<col style="width: 2%">
+<col style="width: 18%">
+<col style="width: 17%">
+<col style="width: 25%">
+<col style="width: 36%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Eixo Temático</th>
-<th>Descrição da Mudança</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Negociação Coletiva</strong></td>
-<td>Art. 611-A: <strong>Prevalência do acordado sobre o legislado</strong>.</td>
-</tr>
-<tr class="even">
-<td><strong>Jornada de Trabalho</strong></td>
-<td>Art. 59: <strong>Estende banco de horas para acordos individuais</strong>(compensação em 6 meses); <strong>jornada 12x36</strong> para todas as categorias; indenização apenas do tempo suprimido do intervalo (Art. 71).</td>
-</tr>
-<tr class="odd">
-<td><strong>Remuneração</strong></td>
-<td>Art. 457: <strong>Exclusão de abonos e prêmios da base salarial</strong>, deixando de compor a remuneração para fins de encargos trabalhistas e previdenciários. Art. 461: Equiparação salarial restrita ao mesmo estabelecimento.</td>
-</tr>
-<tr class="even">
-<td><strong>Regimes de Trabalho</strong></td>
-<td>Criação do trabalho <strong>intermitente</strong> (Art. 443), <strong>terceirização</strong> irrestrita, inclusive da atividade-fim.</td>
-</tr>
-<tr class="odd">
-<td><strong>Rescisão Contratual</strong></td>
-<td>Art. 484-A: <strong>Rescisão por acordo mútuo</strong>. <strong>Fim da homologação sindical</strong> obrigatória para contratos superiores a um ano. Artigo 477-A <strong>equipara as demissões coletivas às individuais</strong></td>
-</tr>
-<tr class="even">
-<td><strong>Representação Sindical</strong></td>
-<td><strong>Contribuição sindical facultativa</strong>. Art. 620: Acordos por empresa prevalecem sobre convenções de categoria. Art. 510, limita a representação sindical no local de trabalho a empresas com 200+ empregados.</td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="críticas-à-reforma-trabalhista" class="slide level2">
-<h2>Críticas à reforma trabalhista</h2>
-<ul>
-<li class="fragment"><p>Carvalho (2017) e Campos (2017) vão destacar os seguintes pontos:</p></li>
-<li class="fragment"><p>Elevação da condição das negociações individuais, a contribuição sindical facultativa e os acordos coletivos firmados no âmbito da empresa <strong>fragilizam a atuação dos sindicatos</strong> e acabam por <strong>reduzir o poder de barganha</strong> dos trabalhadores;</p></li>
-<li class="fragment"><p>A flexibilização excessiva e criação de contratos de trabalho atípicos <strong>incentivam vínculos de curta duração</strong>, desestimulando o <strong>investimento em treinamento e qualificação</strong> o que tende a <strong>impactar negativamente a produtividade</strong>;</p></li>
-<li class="fragment"><p>A limitação da representação sindical no local de trabalho à empresas com mais de 200 empregados, <strong>limita o papel de resolução de conflitos</strong> dos sindicatos e que dificilmente reduzirá a demanda por ações na JT;</p></li>
-<li class="fragment"><p>A reforma poderia levar a formalização de <strong>postos de trabalho precários</strong>, sem ganhos de qualidade;</p></li>
-<li class="fragment"><p>O fim da homologação sindical, poderia na verdade <strong>aumentar a litigiosidade</strong> resultando em insegurança jurídica;</p></li>
-</ul>
-</section>
-<section id="revisão-da-literatura-empírica" class="slide level2">
-<h2>Revisão da literatura empírica</h2>
-<div style="font-size: 0.62em;">
-<table class="caption-top">
-<colgroup>
-<col style="width: 9%">
-<col style="width: 20%">
-<col style="width: 22%">
-<col style="width: 47%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Autor</th>
-<th>Delimitação da Análise</th>
+<th>Autores</th>
+<th>Objetivo</th>
 <th>Metodologia</th>
-<th>Principais Resultados</th>
+<th>Dados</th>
+<th>Resultados</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Ottoni e Barreira (2021)</strong></td>
-<td>Impacto de longo prazo no desemprego.</td>
-<td>Método de Controle Sintético (SCM)</td>
-<td>Projeção de redução na taxa de desemprego entre -1,17 e -3,46 p.p. com maturação de 5 a 10 anos.</td>
+<td>Hartmann et al.&nbsp;(2017)</td>
+<td>Examinar a relação entre complexidade econômica e desigualdade de renda (Gini) entre países.</td>
+<td>Pooled cross-sectional regression, Fixed-effects panel regression</td>
+<td>PIB per capita e seu termo quadrático, anos de escolaridade, população, variáveis institucionais. Fontes: ECI, Gini.</td>
+<td>A complexidade econômica (ECI) teve um efeito negativo na desigualdade de renda (Gini), indicando que maior complexidade está associada a menor desigualdade.</td>
 </tr>
 <tr class="even">
-<td><strong>Serra, Bottega e Sanches (2022)</strong></td>
-<td>Impacto no desemprego nos três primeiros anos (curto prazo).</td>
-<td>Método de Controle Sintético (SCM)</td>
-<td>Inexistência de efeitos estatisticamente significantes sobre o desemprego no período avaliado (2018-2020).</td>
+<td>Lee e Vu (2020)</td>
+<td>Investigar a relação entre a complexidade econômica e a desigualdade de renda (Gini), testando o efeito moderador do capital humano e riscos institucionais.</td>
+<td>Regressão OLS cross-country (109 países) e estimador system GMM (painel dinâmico de 113 países em períodos de 5 anos entre 1965-2014).</td>
+<td>Gini (SWIID); ECI (MIT/OEC); Capital Humano/Escolaridade (Barro e Lee, 2013); PIB per capita (Banco Mundial); Regra de Direito (Dahlberg et al., 2016).</td>
+<td>Relação condicional: a análise OLS indicou correlação negativa (menor Gini), potencializada pelo capital humano. O modelo GMM revelou que o aumento da complexidade pode elevar a desigualdade no curto e longo prazo devido ao viés de habilidades.</td>
 </tr>
 <tr class="odd">
-<td><strong>Santos, Silva e Aragón (2025)</strong></td>
-<td>Avaliação da meta primária (desemprego) e dinâmicas subjacentes.</td>
-<td>Modelo Dinâmico de Fator Latente Multinível (DM-LFM)</td>
-<td>Efeito adverso: elevação média de 3 p.p. na taxa de desemprego entre 2018 e 2021.</td>
+<td>Gosh et al.&nbsp;(2023)</td>
+<td>Explorar o nexo dinâmico entre a transformação estrutural (complexidade econômica) e a desigualdade de renda sob a hipótese da Curva de Kuznets.</td>
+<td>Análise de dados em painel dinâmico utilizando a técnica System-GMM (Generalized Method of Moments), com modelos que tratam questões de heterogeneidade e endogeneidade.</td>
+<td>Gini (World Income Inequality Databank), PIB per capita (WDI), Índice de Complexidade Econômica (Atlas Media), Urbanização e Abertura Comercial (WDI). Abrange 65 países (1990–2015).</td>
+<td>A complexidade econômica tem efeito negativo significativo na desigualdade (correlação negativa), melhorando a distribuição de renda. O impacto é maior em países de baixa renda. A urbanização e a abertura comercial também reduzem a desigualdade, enquanto a crise de 2008 a aumentou.</td>
 </tr>
 <tr class="even">
-<td><strong>Kohli (2025)</strong></td>
-<td>Impacto das contribuições sindicais facultativas na fiscalização e salários.</td>
-<td>Diferenças em Diferenças Sintético (SDID)</td>
-<td>Enfraquecimento sindical: redução de 0,9% nos salários e queda de 2,5% no nível de emprego formal.</td>
+<td>Bandeira Morais et al.(2021)</td>
+<td>Verificar se a estrutura produtiva regional afeta a desigualdade de renda nos estados brasileiros.</td>
+<td>Pooled OLS, Random-effects regression</td>
+<td>PIB per capita e termo quadrático, anos de escolaridade, população,&nbsp; participação do setor agrícola, urbanização. Fontes: ECI e seu termo quadrático, Gini, Theil.</td>
+<td>Encontrou uma relação em formato de U invertido entre a complexidade econômica e a desigualdade de renda.</td>
 </tr>
 <tr class="odd">
-<td><strong>Azevedo (2021)</strong></td>
-<td>Durabilidade do emprego e rotatividade laboral.</td>
-<td>DiD e Modelos de Sobrevivência (Weibull) com dados da PNAD Contínua (2017-2018).</td>
-<td>Impacto positivo na duração dos contratos (Aumento médio de&nbsp;<strong>48 dias</strong>) e redução da probabilidade de saída do trabalhador (queda de 19% no risco de rescisão).</td>
+<td>Smolski et al.&nbsp;(2024)</td>
+<td>Investigar a influência da complexidade econômica e da proximidade (relatedness) sobre a desigualdade regional de renda no Brasil.</td>
+<td>Análise de dados de emprego para 558 microrregiões (2002-2020) utilizando regressão de painel com efeitos fixos (FE) e GMM-DIFF.</td>
+<td>ECI, Densidade de Relatedness (RD), Gini, Densidade Populacional, Escolaridade (Superior). Fontes: RAIS (Ministério do Trabalho), IBGE e COMEXSTAT.</td>
+<td>Relação negativa: o aumento da complexidade e da relatedness reduz a desigualdade de renda (Gini). O efeito foi mais expressivo em regiões com maior desigualdade inicial.</td>
 </tr>
 <tr class="even">
-<td><strong>Oreiro et al.&nbsp;(2023)</strong></td>
-<td>Qualidade do emprego e estrutura ocupacional.</td>
-<td>Aplicação do Índice de Qualidade do Emprego (EQI); análise de dados em painel para</td>
-<td>Aumento da precariedade e informalidade; queda nos salários reais; o desemprego mostrou-se insensível à flexibilização, respondendo prioritariamente ao investimento.</td>
-</tr>
-<tr class="odd">
-<td><strong>Corbi et al.&nbsp;(2022)</strong></td>
-<td>Litigiosidade e incentivos aos processos trabalhistas.</td>
-<td>Análise empírica (viés judicial) + Modelo de simulação (<em>search-matching</em>).</td>
-<td>Queda acentuada no volume de processos judiciais na Justiça do Trabalho.A reforma teve um&nbsp;<strong>impacto positivo</strong>, reduzindo o desemprego em 1,7 p.p. ao diminuir a litigância.</td>
+<td>Freitas et al.&nbsp;(2025)</td>
+<td>Investigar se o aumento da complexidade econômica está associado à redução da desigualdade de renda nas unidades federativas do Brasil, testando a hipótese de que a desigualdade diminui à medida que a complexidade aumenta.</td>
+<td>Modelo linear de Efeitos Fixos (EF) e análise de termo quadrático para testar não linearidade. Foram utilizadas regressões em subamostras por quartis de renda e complexidade.</td>
+<td>Variável dependente: Índice de Gini (PNADC/IBGE). Variável independente: Índice de Complexidade Econômica (ICE) (DataViva/Método dos Reflexos). Controles: PIB per capita (IBGE), População (IBGE), Abertura Comercial (COMEXSTAT), Capital Humano (PNAD), Gastos Governamentais (SICONFI). Período: 2012-2021.</td>
+<td>Revelou uma correlação positiva estatisticamente significativa entre complexidade e desigualdade na amostra global (indica que regiões mais complexas são mais desiguais). No entanto, encontrou indícios de uma relação de U invertido (não linear), onde níveis muito altos de complexidade tendem a reduzir a desigualdade.</td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
-<section id="metodologia-diferenças-em-diferenças-sintético-sdid" class="slide level2">
-<h2>Metodologia: Diferenças em Diferenças Sintético (SDID)</h2>
-<div style="font-size: 0.9em;">
-<ul>
-<li class="fragment"><p><strong>O que é:</strong> Uma combinação das metodologias de Diferenças em Diferenças (DID) e Controle Sintético (SCM) introduzida por <em>Arkhangelsky et al.&nbsp;(2021)</em>;</p></li>
-<li class="fragment"><p><strong>Vantagens:</strong> Torna as tendências paralelas por construção através de reponderação de unidades e tempo, sendo mais robusto que os métodos isolados;</p></li>
-<li class="fragment"><p><strong>Aplicação:</strong> Uso de pesos para criar um “Brasil Sintético” (contrafactual) a partir de outros países;</p></li>
-<li class="fragment"><p><strong>Estimador de SDID:</strong></p></li>
-</ul>
-<div class="fragment fade-in">
-<p><span id="eq-1"><span class="math display">\[
-(\hat{\tau}^{sdid}, \hat{\mu}, \hat{\alpha}, \hat{\beta}) = \arg \min_{\tau, \mu, \alpha, \beta} \left\{ \sum_{i=1}^N \sum_{t=1}^T (Y_{it} - \mu - \alpha_i - \beta_t - W_{it} \tau)^2 \hat{\omega}_i^{sdid} \hat{\lambda}_t^{sdid} \right\}
-\qquad(1)\]</span></span></p>
-</div>
-<ul>
-<li class="fragment">Onde <span class="math inline">\(\mu\)</span> é o <strong>intercepto</strong> global; <span class="math inline">\(\alpha_i\)</span> captura o efeito fixo para a <strong>unidade</strong>; <span class="math inline">\(\beta_t\)</span> captura o efeito fixo para o <strong>tempo</strong>. <span class="math inline">\(\hat{\omega}^{SDID}\)</span> e <span class="math inline">\(\hat{\lambda}^{SDID}\)</span> são respectivamente os <strong>pesos das unidades</strong> e os <strong>pesos do tempo</strong>. E finalmente uma dummy para a <strong>exposição ao tratamento</strong> <span class="math inline">\(W_{it} \in {0,1}\)</span>.</li>
-</ul>
-</div>
-</section>
-<section id="metodologia-diferenças-em-diferenças-sintético-sdid-1" class="slide level2">
-<h2>Metodologia: Diferenças em Diferenças Sintético (SDID)</h2>
-<div style="font-size: 0.9em;">
-<ul>
-<li class="fragment">Inclusão de <strong>covariáveis</strong> através do processo sugerido por <em>Krans(2022)</em>, estimando uma regressão de efeitos fixos bidirecionais, usando apenas as observações que não foram tratadas <span class="math inline">\(W_{it} = 0\)</span>:</li>
-</ul>
-<div class="fragment fade-in">
-<p><span id="eq-2"><span class="math display">\[
-Y_{it} = X_{it} \beta + \mu_i + \gamma_t + u_i
-\qquad(2)\]</span></span></p>
-</div>
-<ul>
-<li class="fragment">Onde são incluídas as covariáveis <span class="math inline">\(X_{it}\)</span>, os efeitos fixos de período <span class="math inline">\(\gamma_t\)</span> e os efeitos fixos da unidade <span class="math inline">\(\mu_i\)</span>. Então, calcula-se o resultado ajustado (<span class="math inline">\(Y_{it}^{adj}\)</span>) para todas as observações, onde <span class="math inline">\(\beta\)</span> são os coeficientes estimados na equação (2).</li>
-</ul>
-<div class="fragment fade-in">
-<p><span id="eq-3"><span class="math display">\[
-Y_{it}^{adj} = Y_{it} - X_{it} \hat{\beta}
-\qquad(3)\]</span></span></p>
-</div>
-<ul>
-<li class="fragment">Por fim, o estimador de SDID é calculado a partir do resultado ajustado (<span class="math inline">\(Y_{it}^{adj}\)</span>) da equação (3) através da equação (1).</li>
-</ul>
-</div>
-</section>
-<section id="dados-e-grupo-de-controle" class="slide level2">
-<h2>Dados e Grupo de Controle</h2>
-<div class="small-text" style="font-size: 0.50em;">
-<div class="fragment fade-in">
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 10%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-</colgroup>
+<section id="dados-variáveis" class="slide level2 sem-logo">
+<h2>Dados: Variáveis</h2>
+
+
+<meta charset="utf-8">
+<style>body{background-color:white;}</style>
+
+
+<div id="gwjfujivgl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gwjfujivgl table {
+  font-family: Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#gwjfujivgl thead, #gwjfujivgl tbody, #gwjfujivgl tfoot, #gwjfujivgl tr, #gwjfujivgl td, #gwjfujivgl th {
+  border-style: none;
+}
+
+#gwjfujivgl p {
+  margin: 0;
+  padding: 0;
+}
+
+#gwjfujivgl .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#gwjfujivgl .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#gwjfujivgl .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#gwjfujivgl .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#gwjfujivgl .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#gwjfujivgl .gt_bottom_border {
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gwjfujivgl .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 1.5px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #000000;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#gwjfujivgl .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#gwjfujivgl .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#gwjfujivgl .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#gwjfujivgl .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#gwjfujivgl .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #000000;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#gwjfujivgl .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#gwjfujivgl .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#gwjfujivgl .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#gwjfujivgl .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#gwjfujivgl .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#gwjfujivgl .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#gwjfujivgl .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gwjfujivgl .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#gwjfujivgl .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#gwjfujivgl .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#gwjfujivgl .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gwjfujivgl .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#gwjfujivgl .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#gwjfujivgl .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gwjfujivgl .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gwjfujivgl .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#gwjfujivgl .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#gwjfujivgl .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#gwjfujivgl .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 1.5px;
+  border-bottom-color: #000000;
+}
+
+#gwjfujivgl .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#gwjfujivgl .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gwjfujivgl .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#gwjfujivgl .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gwjfujivgl .gt_left {
+  text-align: left;
+}
+
+#gwjfujivgl .gt_center {
+  text-align: center;
+}
+
+#gwjfujivgl .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#gwjfujivgl .gt_font_normal {
+  font-weight: normal;
+}
+
+#gwjfujivgl .gt_font_bold {
+  font-weight: bold;
+}
+
+#gwjfujivgl .gt_font_italic {
+  font-style: italic;
+}
+
+#gwjfujivgl .gt_super {
+  font-size: 65%;
+}
+
+#gwjfujivgl .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#gwjfujivgl .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#gwjfujivgl .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#gwjfujivgl .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#gwjfujivgl .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#gwjfujivgl .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#gwjfujivgl .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#gwjfujivgl .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#gwjfujivgl div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
-<tr class="header">
-<th style="text-align: left;">Variável</th>
-<th style="text-align: center;">Dependente</th>
-<th style="text-align: center;">N</th>
-<th style="text-align: center;">Média</th>
-<th style="text-align: center;">Desvio Padrão</th>
-<th style="text-align: center;">Mínimo</th>
-<th style="text-align: center;">Máximo</th>
-<th style="text-align: center;">Fonte</th>
+<tr class="gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Variable-Name">
+<span class="gt_from_md"><strong>Nome da Variável</strong></span>
+</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Description">
+<span class="gt_from_md"><strong>Descrição</strong></span>
+</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Source">
+<span class="gt_from_md"><strong>Fonte</strong></span>
+</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Tx. Desemp. (T)</td>
-<td style="text-align: center;">Sim</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">9,45</td>
-<td style="text-align: center;">5,36</td>
-<td style="text-align: center;">2,02</td>
-<td style="text-align: center;">25,22</td>
-<td style="text-align: center;">WDI</td>
+<tbody class="gt_table_body">
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+Gini
+</td>
+<td headers="Description" class="gt_row gt_center">
+Coeficiente de Gini
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Tx. Desemp. (F)</td>
-<td style="text-align: center;">Sim</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">10,74</td>
-<td style="text-align: center;">5,52</td>
-<td style="text-align: center;">2,70</td>
-<td style="text-align: center;">28,46</td>
-<td style="text-align: center;">WDI</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+Theil
+</td>
+<td headers="Description" class="gt_row gt_center">
+Coeficiente de Theil
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Tx. Desemp. (M)</td>
-<td style="text-align: center;">Sim</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">8,55</td>
-<td style="text-align: center;">5,48</td>
-<td style="text-align: center;">1,39</td>
-<td style="text-align: center;">22,89</td>
-<td style="text-align: center;">WDI</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+Palma
+</td>
+<td headers="Description" class="gt_row gt_center">
+Razão de Palma
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Renda (T)</td>
-<td style="text-align: center;">Sim</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">807,67</td>
-<td style="text-align: center;">294,71</td>
-<td style="text-align: center;">411,48</td>
-<td style="text-align: center;">1.945,67</td>
-<td style="text-align: center;">OIT</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+Var Coef
+</td>
+<td headers="Description" class="gt_row gt_center">
+Coeficiente de variação
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Renda (M)</td>
-<td style="text-align: center;">Sim</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">864,42</td>
-<td style="text-align: center;">316,68</td>
-<td style="text-align: center;">428,12</td>
-<td style="text-align: center;">2.142,26</td>
-<td style="text-align: center;">OIT</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+ICE-R
+</td>
+<td headers="Description" class="gt_row gt_center">
+Índice de Complexidade Econômica Regional
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Renda (F)</td>
-<td style="text-align: center;">Sim</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">754,89</td>
-<td style="text-align: center;">257,21</td>
-<td style="text-align: center;">354,14</td>
-<td style="text-align: center;">1.711,91</td>
-<td style="text-align: center;">OIT</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+ICE-R²
+</td>
+<td headers="Description" class="gt_row gt_center">
+ICE-R ao quadrado
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Emp. Informal (T)</td>
-<td style="text-align: center;">Sim</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">56,18</td>
-<td style="text-align: center;">15,16</td>
-<td style="text-align: center;">25,83</td>
-<td style="text-align: center;">89,80</td>
-<td style="text-align: center;">OIT</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+ln(PIBpc)
+</td>
+<td headers="Description" class="gt_row gt_center">
+Logarítmo Natural do Produto Interno Bruto per capita (*)
+</td>
+<td headers="Source" class="gt_row gt_center">
+IBGE
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Emp. Informal (M)</td>
-<td style="text-align: center;">Sim</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">57,18</td>
-<td style="text-align: center;">15,02</td>
-<td style="text-align: center;">25,27</td>
-<td style="text-align: center;">87,87</td>
-<td style="text-align: center;">OIT</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+ln(PIBpc)²
+</td>
+<td headers="Description" class="gt_row gt_center">
+ln(PIBpc) ao quadrado
+</td>
+<td headers="Source" class="gt_row gt_center">
+IBGE
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Emp. Informal (F)</td>
-<td style="text-align: center;">Sim</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">54,65</td>
-<td style="text-align: center;">15,82</td>
-<td style="text-align: center;">26,63</td>
-<td style="text-align: center;">93,54</td>
-<td style="text-align: center;">OIT</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+ln(População)
+</td>
+<td headers="Description" class="gt_row gt_center">
+Logarítmo natural da População
+</td>
+<td headers="Source" class="gt_row gt_center">
+IBGE
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Tx. Cresc. do PIB</td>
-<td style="text-align: center;">Não</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">3,53</td>
-<td style="text-align: center;">7,11</td>
-<td style="text-align: center;">-24,36</td>
-<td style="text-align: center;">63,33</td>
-<td style="text-align: center;">WDI</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+Escolaridade
+</td>
+<td headers="Description" class="gt_row gt_center">
+Anos médios de escolaridade das pessoas com 25 anos ou mais
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Tx. Inflação</td>
-<td style="text-align: center;">Não</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">5,41</td>
-<td style="text-align: center;">12,11</td>
-<td style="text-align: center;">-27,63</td>
-<td style="text-align: center;">174,86</td>
-<td style="text-align: center;">WDI</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+Qualificado
+</td>
+<td headers="Description" class="gt_row gt_center">
+Parcela da população com 25 anos ou mais com 11 ou mais anos de escolaridade
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Tx. Câmbio Real</td>
-<td style="text-align: center;">Não</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">97,81</td>
-<td style="text-align: center;">16,56</td>
-<td style="text-align: center;">53,79</td>
-<td style="text-align: center;">159,00</td>
-<td style="text-align: center;">WDI</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+Semi-qualificado
+</td>
+<td headers="Description" class="gt_row gt_center">
+Parcela da população com 25 anos ou mais com 4–10 anos de escolaridade
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Tx. Juros</td>
-<td style="text-align: center;">Não</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">7,88</td>
-<td style="text-align: center;">10,93</td>
-<td style="text-align: center;">-58,33</td>
-<td style="text-align: center;">54,68</td>
-<td style="text-align: center;">WDI</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+CNAE diversidade
+</td>
+<td headers="Description" class="gt_row gt_center">
+Número de atividades econômicas únicas
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Pop. Urbana</td>
-<td style="text-align: center;">Não</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">1,01</td>
-<td style="text-align: center;">1,25</td>
-<td style="text-align: center;">-4,20</td>
-<td style="text-align: center;">3,52</td>
-<td style="text-align: center;">WDI</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+CBO diversidade
+</td>
+<td headers="Description" class="gt_row gt_center">
+Número de ocupações únicas
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Ind. Est. Política</td>
-<td style="text-align: center;">Não</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">-0,01</td>
-<td style="text-align: center;">0,72</td>
-<td style="text-align: center;">-2,38</td>
-<td style="text-align: center;">1,22</td>
-<td style="text-align: center;">WDI</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+Parc. Agropecuária
+</td>
+<td headers="Description" class="gt_row gt_center">
+Parcela da agropecuária no emprego
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">Controle de Corrupção</td>
-<td style="text-align: center;">Não</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">-0,00</td>
-<td style="text-align: center;">0,80</td>
-<td style="text-align: center;">-1,39</td>
-<td style="text-align: center;">1,54</td>
-<td style="text-align: center;">WDI</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+Parc. Indústria
+</td>
+<td headers="Description" class="gt_row gt_center">
+Parcela da indústria no emprego
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;">Tx. Part. da Força de Trabalho</td>
-<td style="text-align: center;">Não</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">63,91</td>
-<td style="text-align: center;">5,35</td>
-<td style="text-align: center;">49,63</td>
-<td style="text-align: center;">78,70</td>
-<td style="text-align: center;">WDI</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+Parc. Serviços
+</td>
+<td headers="Description" class="gt_row gt_center">
+Parcela da serviços no emprego
+</td>
+<td headers="Source" class="gt_row gt_center">
+RAIS
+</td>
 </tr>
-<tr class="even">
-<td style="text-align: left;">FBCF</td>
-<td style="text-align: center;">Não</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">23,13</td>
-<td style="text-align: center;">4,38</td>
-<td style="text-align: center;">11,02</td>
-<td style="text-align: center;">33,60</td>
-<td style="text-align: center;">WDI</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">IDE</td>
-<td style="text-align: center;">Não</td>
-<td style="text-align: center;">264</td>
-<td style="text-align: center;">5,31</td>
-<td style="text-align: center;">6,11</td>
-<td style="text-align: center;">-20,36</td>
-<td style="text-align: center;">52,00</td>
-<td style="text-align: center;">WDI</td>
+<tr>
+<td headers="Variable Name" class="gt_row gt_center">
+Grau Abertura (%)
+</td>
+<td headers="Description" class="gt_row gt_center">
+Grau de abertura para o comércio exterior
+</td>
+<td headers="Source" class="gt_row gt_center">
+SECEX/MDIC
+</td>
 </tr>
 </tbody>
 </table>
-<p><em>Nota:</em> Valores baseados nos dados compilados da OIT e WDI.</p>
 </div>
-</div>
+
+
 </section>
-<section id="dados-e-grupo-de-controle-1" class="slide level2">
-<h2>Dados e Grupo de Controle</h2>
-<ul>
-<li class="fragment"><strong>Período:</strong> 2003 a 2024 (Pré-tratamento: 2003-2017; Pós-tratamento: 2018-2024);</li>
-<li class="fragment"><strong>Grupo de Doadores (Controle):</strong> Países da América Latina e Caribe que não realizaram reformas similares no período: Bahamas, Bolívia, Chile, Colômbia, República Dominicana, Guiana, México, Nicarágua, Santa Lúcia, São Vicente e Granadinas e Trinidade e Tobago.</li>
-<li class="fragment"><strong>Países fora da amostra:</strong> Paraguai, Uruguai, Argentina e Costa Rica</li>
-</ul>
+<section id="dados-estatísticas-descritivas" class="slide level2 sem-logo">
+<h2>Dados: Estatísticas Descritivas</h2>
+
+
+<meta charset="utf-8">
+<style>body{background-color:white;}</style>
+
+
+<div id="qajripwwnj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qajripwwnj table {
+  font-family: Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#qajripwwnj thead, #qajripwwnj tbody, #qajripwwnj tfoot, #qajripwwnj tr, #qajripwwnj td, #qajripwwnj th {
+  border-style: none;
+}
+
+#qajripwwnj p {
+  margin: 0;
+  padding: 0;
+}
+
+#qajripwwnj .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: none;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#qajripwwnj .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#qajripwwnj .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#qajripwwnj .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#qajripwwnj .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qajripwwnj .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qajripwwnj .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 1.5px;
+  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #000000;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qajripwwnj .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#qajripwwnj .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#qajripwwnj .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#qajripwwnj .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#qajripwwnj .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #000000;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#qajripwwnj .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#qajripwwnj .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#qajripwwnj .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qajripwwnj .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#qajripwwnj .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#qajripwwnj .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#qajripwwnj .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qajripwwnj .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#qajripwwnj .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#qajripwwnj .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#qajripwwnj .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qajripwwnj .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#qajripwwnj .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#qajripwwnj .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qajripwwnj .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qajripwwnj .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#qajripwwnj .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qajripwwnj .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#qajripwwnj .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 1.5px;
+  border-bottom-color: #000000;
+}
+
+#qajripwwnj .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qajripwwnj .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qajripwwnj .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qajripwwnj .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qajripwwnj .gt_left {
+  text-align: left;
+}
+
+#qajripwwnj .gt_center {
+  text-align: center;
+}
+
+#qajripwwnj .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#qajripwwnj .gt_font_normal {
+  font-weight: normal;
+}
+
+#qajripwwnj .gt_font_bold {
+  font-weight: bold;
+}
+
+#qajripwwnj .gt_font_italic {
+  font-style: italic;
+}
+
+#qajripwwnj .gt_super {
+  font-size: 65%;
+}
+
+#qajripwwnj .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#qajripwwnj .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#qajripwwnj .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#qajripwwnj .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#qajripwwnj .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#qajripwwnj .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#qajripwwnj .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#qajripwwnj .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#qajripwwnj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Variável">
+<span class="gt_from_md"><strong>Variável</strong></span>
+</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="N">
+<span class="gt_from_md"><strong>Obs.</strong></span>
+</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Média">
+<span class="gt_from_md"><strong>Média</strong></span>
+</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="DP">
+<span class="gt_from_md"><strong>DP</strong></span>
+</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Mínimo">
+<span class="gt_from_md"><strong>Mínimo</strong></span>
+</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Q25">
+<span class="gt_from_md"><strong>Q25</strong></span>
+</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Mediana">
+<span class="gt_from_md"><strong>Mediana</strong></span>
+</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Q75">
+<span class="gt_from_md"><strong>Q75</strong></span>
+</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="Máximo">
+<span class="gt_from_md"><strong>Máximo</strong></span>
+</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">Gini</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+0.35
+</td>
+<td headers="DP" class="gt_row gt_center">
+0.06
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+0.12
+</td>
+<td headers="Q25" class="gt_row gt_center">
+0.31
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+0.34
+</td>
+<td headers="Q75" class="gt_row gt_center">
+0.38
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+0.70
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">Theil</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+0.28
+</td>
+<td headers="DP" class="gt_row gt_center">
+0.10
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+0.11
+</td>
+<td headers="Q25" class="gt_row gt_center">
+0.22
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+0.26
+</td>
+<td headers="Q75" class="gt_row gt_center">
+0.32
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+1.26
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">Palma</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+1.57
+</td>
+<td headers="DP" class="gt_row gt_center">
+0.55
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+0.60
+</td>
+<td headers="Q25" class="gt_row gt_center">
+1.24
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+1.42
+</td>
+<td headers="Q75" class="gt_row gt_center">
+1.72
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+11.22
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">Var Coef.</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+1.08
+</td>
+<td headers="DP" class="gt_row gt_center">
+0.41
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+0.51
+</td>
+<td headers="Q25" class="gt_row gt_center">
+0.88
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+1.00
+</td>
+<td headers="Q75" class="gt_row gt_center">
+1.16
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+8.13
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">ICE-R</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+0.00
+</td>
+<td headers="DP" class="gt_row gt_center">
+1.00
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+−2.42
+</td>
+<td headers="Q25" class="gt_row gt_center">
+−0.70
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+−0.18
+</td>
+<td headers="Q75" class="gt_row gt_center">
+0.51
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+4.69
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">(ICE-R)<sup>2</sup></span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+1.00
+</td>
+<td headers="DP" class="gt_row gt_center">
+1.90
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+0.00
+</td>
+<td headers="Q25" class="gt_row gt_center">
+0.09
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+0.40
+</td>
+<td headers="Q75" class="gt_row gt_center">
+1.07
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+22.03
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">ln(PIBpc)</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+2.12
+</td>
+<td headers="DP" class="gt_row gt_center">
+1.09
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+−0.82
+</td>
+<td headers="Q25" class="gt_row gt_center">
+1.34
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+2.14
+</td>
+<td headers="Q75" class="gt_row gt_center">
+2.93
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+5.57
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">ln(PIBpc)<sup>2</sup></span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+5.66
+</td>
+<td headers="DP" class="gt_row gt_center">
+4.67
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+0.00
+</td>
+<td headers="Q25" class="gt_row gt_center">
+1.80
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+4.57
+</td>
+<td headers="Q75" class="gt_row gt_center">
+8.61
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+30.98
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">ln(População)</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+12.22
+</td>
+<td headers="DP" class="gt_row gt_center">
+0.91
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+9.97
+</td>
+<td headers="Q25" class="gt_row gt_center">
+11.66
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+12.12
+</td>
+<td headers="Q75" class="gt_row gt_center">
+12.66
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+16.91
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">Escolaridade</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+10.93
+</td>
+<td headers="DP" class="gt_row gt_center">
+1.16
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+4.91
+</td>
+<td headers="Q25" class="gt_row gt_center">
+10.21
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+11.10
+</td>
+<td headers="Q75" class="gt_row gt_center">
+11.78
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+13.71
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">Qualificado</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+0.18
+</td>
+<td headers="DP" class="gt_row gt_center">
+0.07
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+0.01
+</td>
+<td headers="Q25" class="gt_row gt_center">
+0.13
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+0.17
+</td>
+<td headers="Q75" class="gt_row gt_center">
+0.22
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+0.54
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">Semi-Qualificado</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+0.64
+</td>
+<td headers="DP" class="gt_row gt_center">
+0.06
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+0.26
+</td>
+<td headers="Q25" class="gt_row gt_center">
+0.60
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+0.64
+</td>
+<td headers="Q75" class="gt_row gt_center">
+0.68
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+0.91
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">CNAE diversidade</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+0.00
+</td>
+<td headers="DP" class="gt_row gt_center">
+1.00
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+−0.91
+</td>
+<td headers="Q25" class="gt_row gt_center">
+−0.56
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+−0.27
+</td>
+<td headers="Q75" class="gt_row gt_center">
+0.21
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+20.43
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">CBO diversidade</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+0.00
+</td>
+<td headers="DP" class="gt_row gt_center">
+1.00
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+−0.90
+</td>
+<td headers="Q25" class="gt_row gt_center">
+−0.52
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+−0.26
+</td>
+<td headers="Q75" class="gt_row gt_center">
+0.18
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+17.05
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">Parc. Agropecuária</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+0.08
+</td>
+<td headers="DP" class="gt_row gt_center">
+0.08
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+0.00
+</td>
+<td headers="Q25" class="gt_row gt_center">
+0.02
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+0.05
+</td>
+<td headers="Q75" class="gt_row gt_center">
+0.12
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+0.52
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">Parc. Indústria</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+0.21
+</td>
+<td headers="DP" class="gt_row gt_center">
+0.13
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+0.00
+</td>
+<td headers="Q25" class="gt_row gt_center">
+0.12
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+0.20
+</td>
+<td headers="Q75" class="gt_row gt_center">
+0.29
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+0.73
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">Parc. Serviços</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+0.71
+</td>
+<td headers="DP" class="gt_row gt_center">
+0.14
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+0.25
+</td>
+<td headers="Q25" class="gt_row gt_center">
+0.60
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+0.71
+</td>
+<td headers="Q75" class="gt_row gt_center">
+0.82
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+1.00
+</td>
+</tr>
+<tr>
+<td headers="Variável" class="gt_row gt_left">
+<span class="gt_from_md">Grau Abertura (%)</span>
+</td>
+<td headers="N" class="gt_row gt_center">
+10,710
+</td>
+<td headers="Média" class="gt_row gt_center">
+14.50
+</td>
+<td headers="DP" class="gt_row gt_center">
+26.02
+</td>
+<td headers="Mínimo" class="gt_row gt_center">
+0.00
+</td>
+<td headers="Q25" class="gt_row gt_center">
+0.65
+</td>
+<td headers="Mediana" class="gt_row gt_center">
+6.17
+</td>
+<td headers="Q75" class="gt_row gt_center">
+17.47
+</td>
+<td headers="Máximo" class="gt_row gt_center">
+338.13
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+</section>
+<section id="dados-correlograma" class="slide level2 sem-logo">
+<h2>Dados: Correlograma</h2>
+
+<img data-src="img/matriz_correlacao.png" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"></section>
+<section id="metodologia-efeitos-fixos" class="slide level2 sem-logo">
+<h2>Metodologia: Efeitos Fixos</h2>
 <div class="fragment fade-in">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/Figura1.svg" style="width:75.0%"></p>
-<figcaption>Elaboração própria a partir de dados do WDI e OIT</figcaption>
-</figure>
+<p>O modelo proposto para a análise é principalmente inspirado em Saia et al.&nbsp;(2022), e pode ser expresso na equação abaixo:</p>
+<p><span class="math display">\[
+gini_{it} = \alpha_{i} + \beta_{1} \text{ICE-R}_{it} + \beta_{2} \text{ICE-R}^2_{it} + \gamma X'_{it} + \mu_{i} + \delta_{t} + \epsilon_{it}
+\]</span></p>
 </div>
-</div>
-</section>
-<section id="resultados-impacto-no-desemprego-total" class="slide level2">
-<h2>Resultados: Impacto no Desemprego Total</h2>
-<ul>
-<li class="fragment"><strong>Principal resultado:</strong> A reforma aumentou a taxa de desemprego em média <em>1,34 p.p.</em> no período pós-tratamento (2018-2024);</li>
-</ul>
 <div class="fragment fade-in">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/tab1.png" class="quarto-figure quarto-figure-center" style="width:75.0%"></p>
-</figure>
-</div>
-</div>
-</section>
-<section id="resultados-impacto-no-desemprego-total-1" class="slide level2">
-<h2>Resultados: Impacto no Desemprego Total</h2>
-<div class="fragment fade-in">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/Figura2.svg" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</section>
-<section id="grupo-de-controle-estimado" class="slide level2">
-<h2>Grupo de Controle Estimado</h2>
-<p><br>
-</p>
 <div class="columns" style="display: flex;">
-<div class="column" style="width:70%;">
+<div class="column" style="display: flex;">
+<div title="1 Especificação" style="flex-grow: 1; margin: 5px;">
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>1 Especificação</strong></p>
+</div>
+<div class="callout-content">
 <div class="fragment fade-in">
-<div class="quarto-figure quarto-figure-left">
-<figure>
-<p><img data-src="img/Anexo_Fig1.svg" class="quarto-figure quarto-figure-left" style="width:90.0%"></p>
-</figure>
+<div>
+<ul>
+<li><span class="math inline">\(Gini\)</span> é a desigualdade na região imediata <span class="math inline">\(i\)</span> e no período <span class="math inline">\(t\)</span>;</li>
+<li><span class="math inline">\(ICE-R\)</span> e <span class="math inline">\(ICE-R^2\)</span> representam a sofisticação da estrutura produtiva;</li>
+<li><span class="math inline">\(X´\)</span> é uma matriz de covariáveis;</li>
+<li><span class="math inline">\(e\)</span> é o termo erro;</li>
+<li><span class="math inline">\(\mu_{i}\)</span> captura a heterogeneidade não observada;</li>
+<li><span class="math inline">\(\delta_{t}\)</span> captura fatores específicos não observados.</li>
+</ul>
 </div>
 </div>
-</div><div class="column" style="width:30%;">
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="display: flex;">
+<div title="2 Resultado esperado" style="flex-grow: 1; margin: 5px;">
+<div class="callout callout-important no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>2 Resultado esperado</strong></p>
+</div>
+<div class="callout-content">
 <div class="fragment fade-in">
-<div style="font-size: 0.75em;">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;">País</th>
-<th style="text-align: center;">Peso</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Bolívia</td>
-<td style="text-align: center;">0,361</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Rep.&nbsp;Dominicana</td>
-<td style="text-align: center;">0,249</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">México</td>
-<td style="text-align: center;">0,170</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Colômbia</td>
-<td style="text-align: center;">0,125</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Chile</td>
-<td style="text-align: center;">0,091</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Nicarágua</td>
-<td style="text-align: center;">0,004</td>
-</tr>
-</tbody>
-</table>
+<div>
+<ul>
+<li>Esperamos que coeficiente <span class="math inline">\(\beta_{1}&lt;0\)</span>, confirmando a hipótese de que a complexidade econômica reduz a desigualdade;</li>
+<li>Será avaliado se a complexidade econômica se relaciona com a desigualdade de forma linear ou não através do termo <span class="math inline">\(ICE-R^2\)</span>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="display: flex;">
+<div title="3 Controles/Fontes" style="flex-grow: 1; margin: 5px;">
+<div class="callout callout-tip no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>3 Controles/Fontes</strong></p>
+</div>
+<div class="callout-content">
+<div class="fragment fade-in">
+<div>
+<ul>
+<li><p><strong>Básico:</strong> ln(PIB per capta), ln(PIB per capta)², Grau de abertura (%), ln(População), Escolaridade e Parc. Agropecuária;</p></li>
+<li><p><strong>Estendido:</strong> Qualificado, Semi-Qualificado, CNAE e CBO diversidade e parcela de emprego na indústria e no nos serviços;</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div></div>
+</div>
 </section>
-<section id="resultados-curva-de-efeito-estimada" class="slide level2">
-<h2>Resultados: Curva de efeito estimada</h2>
-<div style="font-size: 0.75em;">
-<ul>
-<li class="fragment"><p><strong>Curto Prazo:</strong> Nos primeiros quatro anos após a reforma, o impacto médio negativo foi de <em>3 p.p. na taxa de desemprego</em>;</p></li>
-<li class="fragment"><p><strong>Inversão de Efeito:</strong> A partir de 2022, o efeito estimado torna-se negativo, sugerindo que é necessário um acompanhamento contínuo do impacto;</p></li>
-<li class="fragment"><p><strong>Discussão:</strong> Esse resultado pode indicar que os efeitos da reforma demoram a ser absorvidos ou que o mercado respondeu a outros estímulos de demanda agregada.</p></li>
-</ul>
+<section id="metodologia-system-gmm" class="slide level2 sem-logo">
+<h2>Metodologia: System-GMM</h2>
+<div class="fragment fade-in">
+<p>O modelo proposto para a análise é principalmente inspirado em (Bandeira Morais; Swart; Jordaan, 2021), e pode ser expresso na equação abaixo:</p>
+<p><span class="math display">\[
+\begin{gathered}
+gini_{it} = \alpha_{i} + \beta_{1}gini_{i,t-1} + \beta_{2} \text{ICE-R}_{it} + \beta_{3} \text{ICE-R}_{i,t-1} +
+\\
+\beta_{4} \text{ICE-R}^2_{it} +  \beta_{5} \text{ICE-R}^2_{i,t-1} + \beta_{6} X'_{it} + \delta_{t} + \epsilon_{it}
+\end{gathered}
+\]</span></p>
 </div>
 <div class="fragment fade-in">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/Anexo_Fig4.svg" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
-</figure>
+<div class="columns" style="display: flex;">
+<div class="column" style="display: flex;">
+<div title="1 Especificação" style="flex-grow: 1; margin: 5px;">
+<div class="callout callout-warning no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>1 Especificação</strong></p>
 </div>
-</div>
-</section>
-<section id="resultados-renda-média-e-informalidade" class="slide level2">
-<h2>Resultados: Renda Média e Informalidade</h2>
-<div style="font-size: 0.75em;">
+<div class="callout-content">
+<div class="fragment fade-in">
+<div>
 <ul>
-<li class="fragment"><strong>Renda:</strong> O único impacto estatisticamente significante foi sobre a renda média masculina, com um aumento de 7,1%;</li>
-<li class="fragment"><strong>Informalidade:</strong> Não foram encontrados resultados estatisticamente significantes para o impacto da reforma sobre o nível de informalidade.</li>
+<li>Inclusão da defasagem da variável dependente <span class="math inline">\(gini_{i,t-1}\)</span>;</li>
+<li>Inclusão da defasagem da variável de interesse <span class="math inline">\(\text{ICE-R}_{i,t-1}\)</span> e seu termo quadrático <span class="math inline">\(\text{ICE-R}^2_{i,t-1}\)</span>.</li>
 </ul>
 </div>
-<div class="fragment fade-in">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="img/tab3.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
-</figure>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="display: flex;">
+<div title="2 Resultado esperado" style="flex-grow: 1; margin: 5px;">
+<div class="callout callout-important no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>2 Resultado esperado</strong></p>
+</div>
+<div class="callout-content">
+<div class="fragment fade-in">
+<div>
+<ul>
+<li>Esperamos que coeficiente <span class="math inline">\(\beta_{2}&lt;0\)</span> e <span class="math inline">\(\beta_{3}&lt;0\)</span>, confirmando a hipótese de que a complexidade econômica reduz a desigualdade;</li>
+<li>Será avaliado se a complexidade econômica se relaciona com a desigualdade de forma linear ou não através do termo <span class="math inline">\(ICE-R^2\)</span> e <span class="math inline">\(\text{ICE-R}^2_{i,t-1}\)</span>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="column" style="display: flex;">
+<div title="3 Controles/Fontes" style="flex-grow: 1; margin: 5px;">
+<div class="callout callout-tip no-icon callout-titled callout-style-simple">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>3 Controles/Fontes</strong></p>
+</div>
+<div class="callout-content">
+<div class="fragment fade-in">
+<div>
+<ul>
+<li><p><strong>Básico:</strong> ln(PIB per capta), ln(PIB per capta)², Grau de abertura (%), ln(População), Escolaridade e Parc. Agropecuária;</p></li>
+<li><p><strong>Instrumentos:</strong> <span class="math inline">\(gini_{t-3}\)</span>, <span class="math inline">\(\text{ICE-R}_{t-3}\)</span>, <span class="math inline">\(ln(PIBpc)_{t-2}\)</span> a <span class="math inline">\(ln(PIBpc)_{t-3}\)</span>, <span class="math inline">\(\text{Grau Abertura (%)}_{t-1}\)</span> a <span class="math inline">\(\text{Grau Abertura (%)}_{t-3}\)</span>, <span class="math inline">\(ln(População)_{t-1}\)</span> a <span class="math inline">\(ln(População)_{t-2}\)</span>, <span class="math inline">\(Escolaridade_{t-1}\)</span>, <span class="math inline">\(\text{Parc. Agro}_{t-2}\)</span> a <span class="math inline">\(\text{Parc. Agro}_{t-3}\)</span>.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
 </div>
 </section>
-<section id="considerações-finais" class="slide level2">
+<section id="modelo-base---ef" class="slide level2 sem-logo">
+<h2>Modelo Base - EF</h2>
+
+<img data-src="images/clipboard-3746898299.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="modelo-estendido---ef" class="slide level2 sem-logo">
+<h2>Modelo Estendido - EF</h2>
+
+<img data-src="images/clipboard-798127953.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="robustez---medidas-alternativas" class="slide level2 sem-logo">
+<h2>Robustez - Medidas Alternativas</h2>
+
+<img data-src="images/clipboard-641764799.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="robustez---sub-amostras" class="slide level2 sem-logo">
+<h2>Robustez - Sub-amostras</h2>
+
+<img data-src="images/clipboard-3749248291.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="robustez---system-gmm" class="slide level2 sem-logo">
+<h2>Robustez - System-GMM</h2>
+
+<img data-src="images/clipboard-4024183233.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="considerações-finais" class="slide level2 sem-logo">
 <h2>Considerações Finais</h2>
 <ul>
-<li class="fragment"><p><strong>Conclusão:</strong> A reforma apresentou um efeito negativo inicial (aumento do desemprego), contrariando seu objetivo principal declarado;</p></li>
-<li class="fragment"><p><strong>Limitações:</strong> Necessidade de novos estudos para verificar se os efeitos positivos recentes (pós-2022) se mantém na presença de outros controles;</p></li>
-<li class="fragment"><p><strong>Implicação:</strong> O mercado de trabalho parece responder mais fortemente a variáveis de demanda do que apenas a mudanças na legislação.</p></li>
+<li class="fragment"><p><span class="font-small"><strong>Proposta:</strong> Estudar a relação entre a <em>complexidade econômica</em> e a <em>desigualdade de renda</em> no <strong>mercado formal de trabalho</strong> nas <strong>regiões imediatas</strong> do Brasil no período de <strong>2003 a 2023</strong>, através dos <strong>microsdados da RAIS</strong>;</span></p></li>
+<li class="fragment"><p><span class="font-small"><strong>Arcabouço Teórico:</strong> Estruturalismo Latino-Americano, o Novo Desenvolvimentismo e a Complexidade econômica;</span></p></li>
+<li class="fragment"><p><span class="font-small"><strong>Resultados Preliminares - Efeitos Fixos:</strong></span></p></li>
+</ul>
+<ol type="1">
+<li class="fragment"><span class="font-small">Relação <em>positiva</em> entre a complexidade econômica e a desigualdade de renda;</span></li>
+<li class="fragment"><span class="font-small">Resultado se manteve <em>consistente</em> a mudanças na especificação, a diferentes medidas de desigualdade;</span></li>
+<li class="fragment"><span class="font-small">No entanto, o efeito pode ser <em>heterogêneo</em> a depender da amostra utilizada;</span></li>
+</ol>
+<ul>
+<li class="fragment"><span class="font-small"><strong>Resultados Preliminares - Painel Dinâmico:</strong></span></li>
+</ul>
+<ol type="1">
+<li class="fragment"><span class="font-small">A desigualdade de renda é <em>persistente</em>;</span></li>
+<li class="fragment"><span class="font-small">ICE-R contemporâneo se manteve <em>positivo</em>, assim como no modelo de efeitos fixos;</span></li>
+<li class="fragment"><span class="font-small">ICE-R defasado e seu termo quadrático apresentaram coeficientes <em>negativos</em> e estatisticamente significantes indicando que <em>no curto prazo o aumento da complexidade pode aumentar ligeiramente a desigualdade, mas com o passar do tempo a tendência é reduzir a desigualdade de renda</em>, comprovando a hipótese inicial.</span></li>
+</ol>
+</section>
+<section id="próximos-passos" class="slide level2 sem-logo">
+<h2>Próximos Passos</h2>
+<ul>
+<li class="fragment"><p>Seção 3 do capítulo 2 apresentando do diálogo entre as escolas apresentadas como arcabouço teórico;</p></li>
+<li class="fragment"><p>Capítulo 3 com a análise exploratória;</p></li>
+<li class="fragment"><p>Explorar diferentes variáveis e modelos na análise empírica do capítulo 4.</p></li>
 </ul>
 </section>
-<section id="obrigado" class="slide level2">
-<h2>Obrigado!</h2>
-<p><br>
-</p>
-<p><br>
-</p>
-<p><strong>Contato:</strong> andre.barbato@ufabc.edu.br</p>
+<section id="obrigado" class="title-slide slide level1 sem-logo center">
+<h1>Obrigado!</h1>
 <div class="quarto-auto-generated-content">
-<p><img src="img/logo_nova_35pp.jpg" class="slide-logo"></p>
+<p><img src="img/logo-ufabc-sigla-abaixo-negativo-svg.svg" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>XXXI Encontro Nacional de Economia Política</p>
+<p>Qualificação - PPGECO/UFABC</p>
 </div>
 </div>
 </section>
@@ -1019,19 +2597,20 @@ Y_{it}^{adj} = Y_{it} - X_{it} \hat{\beta}
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="enep_presentation_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="quali_presentation_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="enep_presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="enep_presentation_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="enep_presentation_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="enep_presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="enep_presentation_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="quali_presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="quali_presentation_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="quali_presentation_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="quali_presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="quali_presentation_files/libs/revealjs/plugin/reveal-pointer/pointer.js"></script>
+  <script src="quali_presentation_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="enep_presentation_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="enep_presentation_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="enep_presentation_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="enep_presentation_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="quali_presentation_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="quali_presentation_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="quali_presentation_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="quali_presentation_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -1046,6 +2625,7 @@ Y_{it}^{adj} = Y_{it} - X_{it} \hat{\beta}
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'pointer': {"key":"q","color":"red","pointerSize":8,"alwaysVisible":false},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1216,7 +2796,7 @@ Y_{it}^{adj} = Y_{it} - X_{it} \hat{\beta}
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealPointer, QuartoSupport,
 
           RevealMath,
           RevealNotes,
@@ -1225,6 +2805,82 @@ Y_{it}^{adj} = Y_{it} - X_{it} \hat{\beta}
         ]
       });
     </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

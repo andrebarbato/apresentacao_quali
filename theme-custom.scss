@@ -12,7 +12,7 @@
 // overridden by the super-theme
 
 // Background of the presentation
-$backgroundColor: white; // Tom creme/areia suave e elegante
+$backgroundColor: #f8fafc; // Tom creme/areia suave e elegante
 
 // Primary/body text
 $mainFont: 'Jost', sans-serif;
@@ -65,7 +65,7 @@ em, i {
 
 // start using css here
 #title-slide > h1 {
-  color: #52658D;
+  color: white;
   font-size: 4.5rem !important;
 }
 
@@ -93,8 +93,8 @@ em, i {
 // Linha sob os títulos h1 e h2
 .reveal h1, 
 .reveal h2 {
-  border-bottom: 2px solid #52658D; /* Usa a mesma cor do seu $headingColor */
-  padding-bottom: 10px;            /* Espaço entre o texto e a linha */
+  border-bottom: 2px solid #e2e8f0; /* Usa a mesma cor do seu $headingColor */
+  padding-bottom: 8px;            /* Espaço entre o texto e a linha */
   margin-bottom: 20px;            /* Espaço entre a linha e o conteúdo abaixo */
 }
 
@@ -115,7 +115,7 @@ em, i {
 
 /* Adiciona sombreado às callouts */
 .reveal .callout {
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.15) !important;
   border-radius: 5px; /* Opcional: arredonda levemente os cantos para combinar com a sombra */
   margin-bottom: 20px;
 }
@@ -126,7 +126,7 @@ em, i {
   padding: 20px;
   background-color: color-mix(in srgb, #52658D 7%, white);
   border-radius: 5px; /* Arredonda os cantos */
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra abaixo e a direita */
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.15); /* Sombra abaixo e a direita */
 }
 
 // caixa: tamanho da fonte 
@@ -151,10 +151,10 @@ em, i {
 
 /* Estilização global para imagens nos slides */
 .reveal section img {
-  border-radius: 0 !important;           /* Arredonda os cantos */
-  box-shadow: none !important; /* Sombra à direita e abaixo */
-  margin-top: 10px;                         /* Espaço extra acima da imagem */
-  margin-bottom: 10px;                      /* Espaço extra abaixo da imagem */
+  border-radius: 5px !important;                          /* Cantos arredondados iguais às boxes */
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.15) !important; /* Mesma sombra das callouts/boxes */
+  margin-top: 10px;                                       
+  margin-bottom: 10px;                                    
 }
 
 /* Força as colunas a terem a mesma altura */
@@ -176,3 +176,51 @@ em, i {
   flex-grow: 1;
 }
 
+/* Efeito de deslocamento e destaque nas caixas ao passar o mouse */
+.content-box, .blackbox, .reveal .callout {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.content-box:hover, .blackbox:hover, .reveal .callout:hover {
+  transform: translateY(-5px); /* Desloca a caixa levemente para cima */
+  box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.15); /* Aumenta a intensidade da sombra */
+  border-color: #437597; /* Opcional: muda sutilmente a cor da borda para dar destaque */
+}
+
+/* Se o slide atual (.present) tiver a classe .sem-logo, suma com o logotipo */
+.reveal:has(section.present.sem-logo) .slide-logo {
+  display: none !important;
+}
+
+/* 1. Estado Padrão: Callouts em cinza claro e neutro */
+.reveal .callout {
+  background-color: #f8fafc !important; /* Fundo cinza bem claro */
+  border-color: #cbd5e1 !important;     /* Borda cinza suave */
+  border-left-color: #94a3b8 !important; /* Barra lateral esquerda neutra */
+  color: #334155 !important;            /* Cor do texto interna */
+}
+
+/* Garante que o título/cabeçalho do callout também fique neutro no padrão */
+.reveal .callout .callout-title {
+  background-color: transparent !important;
+  color: #475569 !important;
+}
+
+/* 2. Estado Hover: Ao passar o mouse, ele ganha a cor principal (#52658D) e destaque */
+.reveal .callout:hover {
+  background-color: color-mix(in srgb, #52658D 6%, white) !important; /* Fundo levemente tingido com a sua cor principal */
+  border-color: #52658D !important;     /* Borda assume a cor principal */
+  border-left-color: #52658D !important; /* Barra lateral esquerda ganha cor forte */
+  transform: translateY(-5px);          /* Mantém o efeito de subir que criamos antes */
+  box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Muda a cor do título do callout quando o mouse estiver em cima */
+.reveal .callout:hover .callout-title {
+  color: #334155 !important;
+}
+
+// Adicione esta regra solta no final do arquivo:
+.font-small {
+  font-size: 0.85em !important; 
+}
