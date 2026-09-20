@@ -348,21 +348,102 @@ $$
 
 ![](images/clipboard-3746898299.png){fig-align="center"}
 
+<!-- Retângulo 1 (Aparece no 1º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 20.5%; left: 25%; width: 50%; height: 16%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="1"}
+:::
+
+<!-- Retângulo 2 (Aparece no 2º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 36.5%; left: 25%; width: 50%; height: 16%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="2"}
+:::
+
+<!-- Retângulo 3 (Aparece no 2º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 52%; left: 25%; width: 50%; height: 32%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="3"}
+:::
+
+
 ## Modelo Estendido - EF {.sem-logo}
 
 ![](images/clipboard-798127953.png){fig-align="center"}
+
+<!-- Retângulo 1 (Aparece no 1º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 18%; left: 24.5%; width: 51%; height: 11.5%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="1"}
+:::
+
+<!-- Retângulo 2 (Aparece no 2º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 29%; left: 24.5%; width: 51%; height: 11%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="2"}
+:::
+
+<!-- Retângulo 3 (Aparece no 3º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 40%; left: 24.5%; width: 51%; height: 11%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="3"}
+:::
+
+<!-- Retângulo 4 (Aparece no 4º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 50.5%; left: 24.5%; width: 51%; height: 11%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="4"}
+:::
+
+<!-- Retângulo 5 (Aparece no 5º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 61%; left: 24.5%; width: 51%; height: 11%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="5"}
+:::
+
+<!-- Retângulo 6 (Aparece no 6º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 72%; left: 24.5%; width: 51%; height: 16.5%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="6"}
+:::
 
 ## Robustez - Medidas Alternativas {.sem-logo}
 
 ![](images/clipboard-641764799.png){fig-align="center"}
 
+<!-- Retângulo 1 (Aparece no 1º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 20.5%; left: 24.5%; width: 51%; height: 16%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="1"}
+:::
+
+<!-- Retângulo 2 (Aparece no 2º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 36.5%; left: 24.5%; width: 51%; height: 16%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="2"}
+:::
+
+<!-- Retângulo 3 (Aparece no 2º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 52%; left: 24.5%; width: 51%; height: 32%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="3"}
+:::
+
 ## Robustez - Sub-amostras {.sem-logo}
 
 ![](images/clipboard-3749248291.png){fig-align="center"}
 
+<!-- Retângulo 1 (Aparece no 1º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 20.5%; left: 8%; width: 84%; height: 16%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="1"}
+:::
+
+<!-- Retângulo 2 (Aparece no 2º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 36.5%; left: 8%; width: 84%; height: 16%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="2"}
+:::
+
+<!-- Retângulo 3 (Aparece no 2º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 52%; left: 8%; width: 84%; height: 32%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="3"}
+:::
+
 ## Robustez - System-GMM {.sem-logo}
 
 ![](images/clipboard-4024183233.png){fig-align="center"}
+
+<!-- Retângulo 1 (Aparece no 1º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 18.5%; left: 14.5%; width: 71%; height: 12%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="1"}
+:::
+
+<!-- Retângulo 2 (Aparece no 2º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 30.5%; left: 14.5%; width: 71%; height: 12%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="2"}
+:::
+
+<!-- Retângulo 3 (Aparece no 2º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 42.5%; left: 14.5%; width: 71%; height: 12.5%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="3"}
+:::
+
+<!-- Retângulo 4 (Aparece no 2º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 54.5%; left: 14.5%; width: 71%; height: 18.5%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="4"}
+:::
+
+<!-- Retângulo 4 (Aparece no 2º clique) -->
+::: {.fragment .fade-in-then-out style="position: absolute; top: 72.5%; left: 14.5%; width: 71%; height: 24.5%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="5"}
+:::
 
 ## Considerações Finais {.sem-logo}
 
