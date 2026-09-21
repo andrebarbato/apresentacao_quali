@@ -44,13 +44,13 @@ Este projeto de pesquisa se propõe a estudar a relação entre a **sofisticaç�
 :::
 ::::
 
-## Introdução {.sem-logo}
+## Introdução / Motivação {.sem-logo}
 
 \
 
 ![](img/fig1_gini_e_emprego_industrial.svg){width="90%" fig-align="center"}
 
-## Introdução {.sem-logo}
+## Introdução / Motivação {.sem-logo}
 
 ![](img/fig2_ranking_complexidade.svg){fig-align="center"}
 
@@ -200,7 +200,7 @@ Apresentar o conceito de complexidade econômica e o indicador ICE-R, que traduz
 ::: {.blackbox .font-small}
 {{< fa lightbulb size=2x >}} *Hipótese:*
 
-Partimos da hipótese de que a complexidade econômica regional se relaciona negativamente com a desigualdade de renda , ou seja, ***a complexidade reduz a desigualdade nas regiões imediatas*** no Brasil. De acordo com a literatura há evidências de que essa relação pode ser heterogênea de acordo com a região.
+Partimos da hipótese de que a complexidade econômica regional se relaciona *negativamente* com a desigualdade de renda , ou seja, ***um aumento da complexidade econômica reduz a desigualdade nas regiões imediatas*** no Brasil. De acordo com a literatura há evidências de que essa relação pode ser heterogênea de acordo com a região.
 :::
 ::::
 
@@ -227,7 +227,7 @@ linhas_limpas <- linhas[!grepl("<!DOCTYPE", linhas, ignore.case = TRUE)]
 cat(linhas_limpas, sep = "\n")
 ```
 
-## Dados: Estatísticas Descritivas {.sem-logo}
+## Dados: Estatísticas Descritivas {visibility="hidden" .sem-logo}
 
 ```{r, echo=FALSE, results='asis'}
 linhas <- readLines("img/tab2_estatisticas_descritivas.html", warn = FALSE)
@@ -236,14 +236,14 @@ linhas_limpas <- linhas[!grepl("<!DOCTYPE", linhas, ignore.case = TRUE)]
 cat(linhas_limpas, sep = "\n")
 ```
 
-## Dados: Correlograma {.sem-logo}
+## Dados: Correlograma {visibility="hidden" .sem-logo}
 
 ![](img/matriz_correlacao.png){width="90%" fig-align="center"}
 
 ## Metodologia: Efeitos Fixos {.sem-logo}
 
 ::: {.fragment .fade-in}
-O modelo proposto para a análise é principalmente inspirado em Saia et al. (2022), e pode ser expresso na equação abaixo:
+O modelo proposto para a análise é principalmente inspirado em  (Bandeira Morais; Swart; Jordaan, 2021), e pode ser expresso na equação abaixo:
 
 $$
 gini_{it} = \alpha_{i} + \beta_{1} \text{ICE-R}_{it} + \beta_{2} \text{ICE-R}^2_{it} + \gamma X'_{it} + \mu_{i} + \delta_{t} + \epsilon_{it}
@@ -282,7 +282,7 @@ $$
 ::::: {.callout-tip appearance="minimal" title="3 Controles/Fontes" style="flex-grow: 1; margin: 5px;"}
 :::: {.fragment .fade-in}
 ::: nonincremental
--   **Básico:** ln(PIB per capta), ln(PIB per capta)², Grau de abertura (%), ln(População), Escolaridade e Parc. Agropecuária;
+-   **Base:** ln(PIB per capta), ln(PIB per capta)², Grau de abertura (%), ln(População), Escolaridade e Parc. Agropecuária;
 
 -   **Estendido:** Qualificado, Semi-Qualificado, CNAE e CBO diversidade e parcela de emprego na indústria e no nos serviços;
 :::
@@ -295,7 +295,7 @@ $$
 ## Metodologia: System-GMM {.sem-logo}
 
 ::: {.fragment .fade-in}
-O modelo proposto para a análise é principalmente inspirado em (Bandeira Morais; Swart; Jordaan, 2021), e pode ser expresso na equação abaixo:
+O modelo proposto para a análise é principalmente inspirado em Saia et al. (2022), e pode ser expresso na equação abaixo:
 
 $$
 \begin{gathered}
@@ -334,7 +334,7 @@ $$
 ::::: {.callout-tip appearance="minimal" title="3 Controles/Fontes" style="flex-grow: 1; margin: 5px;"}
 :::: {.fragment .fade-in}
 ::: nonincremental
--   **Básico:** ln(PIB per capta), ln(PIB per capta)², Grau de abertura (%), ln(População), Escolaridade e Parc. Agropecuária;
+-   **Base:** ln(PIB per capta), ln(PIB per capta)², Grau de abertura (%), ln(População), Escolaridade e Parc. Agropecuária;
 
 -   **Instrumentos:** $gini_{t-3}$, $\text{ICE-R}_{t-3}$, $ln(PIBpc)_{t-2}$ a $ln(PIBpc)_{t-3}$, $\text{Grau Abertura (%)}_{t-1}$ a $\text{Grau Abertura (%)}_{t-3}$, $ln(População)_{t-1}$ a $ln(População)_{t-2}$, $Escolaridade_{t-1}$, $\text{Parc. Agro}_{t-2}$ a $\text{Parc. Agro}_{t-3}$.
 :::
@@ -405,21 +405,29 @@ $$
 ::: {.fragment .fade-in-then-out style="position: absolute; top: 52%; left: 24.5%; width: 51%; height: 32%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="3"}
 :::
 
-## Robustez - Sub-amostras {.sem-logo}
+## Robustez - Sub-amostras (a) {.sem-logo}
+
+\
+
+![](img/cluster_radar.png){fig-align="center"}
+
+## Robustez - Sub-amostras (b) {#sub-amostras .sem-logo}
 
 ![](images/clipboard-3749248291.png){fig-align="center"}
 
 <!-- Retângulo 1 (Aparece no 1º clique) -->
-::: {.fragment .fade-in-then-out style="position: absolute; top: 20.5%; left: 8%; width: 84%; height: 16%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="1"}
+::: {.fragment .fade-in-then-out style="position: absolute; top: 20%; left: 12.5%; width: 75%; height: 14.5%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="1"}
 :::
 
 <!-- Retângulo 2 (Aparece no 2º clique) -->
-::: {.fragment .fade-in-then-out style="position: absolute; top: 36.5%; left: 8%; width: 84%; height: 16%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="2"}
+::: {.fragment .fade-in-then-out style="position: absolute; top: 34%; left: 12.5%; width: 75%; height: 14.5%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="2"}
 :::
 
 <!-- Retângulo 3 (Aparece no 2º clique) -->
-::: {.fragment .fade-in-then-out style="position: absolute; top: 52%; left: 8%; width: 84%; height: 32%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="3"}
+::: {.fragment .fade-in-then-out style="position: absolute; top: 48%; left: 12.5%; width: 75%; height: 29%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="3"}
 :::
+
+[[Ver apêndice](#cluster)]{.font-small}
 
 ## Robustez - System-GMM {.sem-logo}
 
@@ -472,3 +480,9 @@ $$
 -   Explorar diferentes variáveis e modelos na análise empírica do capítulo 4.
 
 # Obrigado! {.sem-logo}
+
+## Apêndice: Cluster {#cluster .sem-logo}
+
+![](img/fig_agrupamento_kmeans.png){width="80%" fig-align="center"}
+
+[[↩️ Voltar para o Slide Sub-Amostras](#sub-amostras)]{.font-small}
