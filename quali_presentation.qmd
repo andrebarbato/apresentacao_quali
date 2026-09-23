@@ -14,7 +14,7 @@ format:
       style: "color: #ffffff;" 
     output-file: "index.html"
     logo: 'img/logo-ufabc-sigla-abaixo-negativo-svg.svg'
-    footer: "Qualificação - PPGECO/UFABC"
+    footer: "Relatório para Qualificação - PPGECO/UFABC"
     theme: ["theme-custom.scss"]
     slide-number: c/t
     incremental: true
@@ -30,9 +30,9 @@ format:
 
 :::: {.fragment .fade-in}
 ::: {.callout-tip appearance="minimal"}
-## Delimitação do Tema
+Delimitação do Tema
 
-Este projeto de pesquisa se propõe a estudar a relação entre a **sofisticação da estrutura produtiva** e a **desigualdade de renda** no nível das ***Regiões Imediatas*** no Brasil no mercado de trabalho formal, através dos microdados da Relação Anual de Informações Sociais (**RAIS**) fornecidos pelo Ministério do Trabalho e Emprego, no período de **2003 a 2023**.
+Este projeto de pesquisa se propõe a estudar a relação entre a **sofisticação da estrutura produtiva** e a **desigualdade de renda** no nível das ***Regiões Imediatas*** no Brasil para o mercado de trabalho formal, através dos microdados da Relação Anual de Informações Sociais (**RAIS**) fornecidos pelo Ministério do Trabalho e Emprego, no período de **2003 a 2023**.
 :::
 ::::
 
@@ -44,15 +44,38 @@ Este projeto de pesquisa se propõe a estudar a relação entre a **sofisticaç�
 :::
 ::::
 
+::: {.notes}
+O escopo deste projeto é estudar a relação ... 
+
+Segundo Hartmann e outros, em seu trabalho seminal sobre a relação entre a complexidade e a desigualdade... 
+:::
+
 ## Introdução / Motivação {.sem-logo}
 
 \
 
 ![](img/fig1_gini_e_emprego_industrial.svg){width="90%" fig-align="center"}
 
+::: {.notes}
+Como principais motivações para esta pesquisa podemos citar primeiraente o contexto histórico da desigualdade de renda no Brasil e o quadro de desindustrialização precoce que sofremos nas últimas décadas. 
+
+No Painel A, temos o coeficiente de Gini para os últimos 25 anos, e notamos que apesar da trajetória decendente, o patamar da desigualdade medida pelo Gini ainda é superior a de países da AL, países de renda média, e o patamar de desigualdade Glogal. 
+
+No painel B, temos a participção do emprego industrial no emprego total, que mostra uma perda forte nos último anos segundo dados da PNAD contínua. 
+:::
+
 ## Introdução / Motivação {.sem-logo}
 
 ![](img/fig2_ranking_complexidade.svg){fig-align="center"}
+
+
+::: {.notes}
+
+Outro indicador da perda de sofisticação da estrutura produtiva que podemos mostrar é o ranking da complexidade econômica publicado pelo Growth Lab da Univ. Harvard. 
+
+Os dados mostram que nos últimos 29 anos o Brasil perdeu 30 posições no ranking global, enquanto isso a China que em 1995 estava abaixo do Brasil em 42º, ultrapassou os EUA e estão hoje em 10º lugar. Da mesma forma a Índia ganhou 15 posições no ranking no mesmo período. 
+
+:::
 
 ## Arcabouço Teórico {.sem-logo}
 
@@ -117,6 +140,23 @@ Este projeto de pesquisa se propõe a estudar a relação entre a **sofisticaç�
 ::::
 :::::
 ::::::
+
+::: {.notes}
+
+O arcabouço teórico da pesquisa parte da teoria estruturalita latino americana, da teoria ND e da teoria da complexidade econômica. 
+
+A desigualdade de renda está no centro das teses propostas pela teoria estruturalista como a tese centro-periferia e a tese da deterioração dos termos de troca. A assimetria na dinâmica centro-periferia impõe um limite estrutural ao aumento da renda na periferia, de modo que segundo Prebish a industrialização dos países em desenvolvimento é o único meio de  captar uma parte do fruto do progresso técnico e elevar o padrão de vida das pessoas.
+
+Ja a teoria novo ND vai propor uma macroeconomia focada em países de renda média e propõe compatibilizar o crescimento econômico com a equidade social. Eles vão propor o equilíbrio dos cinco preços e neutralização da doença holandesa, através da neutralização da taxa de câmbio. Eles vão dizer que é preciso um crescimento econômico a taxas elevadas é para reduzir o problema da desigualdade. 
+
+A teoria da complexidade econômica proposta por hidalgo e hausmann surge atraves do uso de redes complexas aplicadas a dados do comercio internacional. Eles vão desenvolver uma medida empírica para capaz de captar a sofisticação da estrutura produtiva o ICE. 
+
+Diversidade = número de produtos que um país consegue exportar com VCR
+
+Ubiquidade = com o número de países que conseguem produzir determinado bem
+
+
+:::
 
 ## O que é uma região imediata? {.sem-logo}
 
@@ -184,27 +224,49 @@ Construído a partir de uma adaptação do *Product Space*, que permite mapear a
 :::::::::::
 ::::::::::::
 
+::: {.notes}
+
+No que diz respeito a medidas de complexidade econômica no nível regional, a plataforma dataviva é pioneira na divulgação dessas medidas para o Brasil. Eles disponibilizam os índices ICE e ICA... 
+
+além de permitir uma análise regional através do espaço atividades...
+
+:::
+
 ## Objetivos e Hipóteses {.sem-logo}
 
 :::: {.fragment .fade-in}
-::: {.blackbox .font-small}
-{{< fa bullseye size=2x >}} *Geral:*
+::: {.blackbox .font-small style="width: 100%; margin: 0 auto 15px auto; padding: 13px;"}
+{{< fa bullseye size=1x >}} [*Geral:*]{.font-small}
 
-Apresentar o conceito de complexidade econômica e o indicador ICE-R, que traduz a sofisticação da estrutura produtiva regional. Traçar um paralelo entre a teoria da complexidade econômica e a teoria Estruturalista/Novo Desenvolvimentista, demonstrando a importância da estrutura produtiva, em especial do **setor industrial**, no desenvolvimento e na distribuição de renda regional. Por fim, através de dados das **regiões imediatas** brasileiras para o período **2003-2023**, investigar a relação entre o ICE-R e o coeficiente de Gini.
+[Investigar a relação entre o ICE-R e o coeficiente de Gini nas **regiões imediatas** brasileiras para o período **2003-2023**.]{.font-small}
+
 :::
 ::::
 
-\
 
 :::: {.fragment .fade-in}
-::: {.blackbox .font-small}
-{{< fa lightbulb size=2x >}} *Hipótese:*
+::: {.blackbox .font-small style="width: 100%; margin: 0 auto 15px auto; padding: 13px;"}
+{{< fa bullseye size=1x >}} [*Específicos:*]{.font-small}
 
-Partimos da hipótese de que a complexidade econômica regional se relaciona *negativamente* com a desigualdade de renda , ou seja, ***um aumento da complexidade econômica reduz a desigualdade nas regiões imediatas*** no Brasil. De acordo com a literatura há evidências de que essa relação pode ser heterogênea de acordo com a região.
+::: nonincremental
+1. [Traçar um paralelo entre a teoria da complexidade econômica e a teoria Estruturalista/Novo Desenvolvimentista;]{.font-small}
+2. [Apresentar uma análise exploratória relacionando a complexidade econômica e a desigualdade de renda e sua distribuição territorial; (*próximos passos*);]{.font-small}
+3. [Análise empírica da relação entre a complexidade econômica e a desigualdade de renda.]{.font-small}
+:::
+
 :::
 ::::
 
-## Revisão da Literatura {.sem-logo .smaller}
+
+:::: {.fragment .fade-in}
+::: {.blackbox .font-small style="width: 100%; margin: 0 auto 15px auto; padding: 13px;"}
+{{< fa lightbulb size=1x >}} [*Hipótese:*]{.font-small}
+
+[A complexidade econômica regional se relaciona *negativamente* com a desigualdade de renda , ou seja, ***um aumento da complexidade econômica reduz a desigualdade nas regiões imediatas*** no Brasil. De acordo com a literatura há evidências de que essa relação pode ser heterogênea de acordo com a região.]{.font-small}
+:::
+::::
+
+## Revisão da Literatura Empírica Selecionada{.sem-logo .smaller}
 
 ::: {style="font-size: 70%;"}
 
@@ -218,6 +280,26 @@ Partimos da hipótese de que a complexidade econômica regional se relaciona *ne
 | Freitas et al. (2025)        | Investigar se o aumento da complexidade econômica está associado à redução da desigualdade de renda nas unidades federativas do Brasil, testando a hipótese de que a desigualdade diminui à medida que a complexidade aumenta. | Modelo linear de Efeitos Fixos (EF) e análise de termo quadrático para testar não linearidade. Foram utilizadas regressões em subamostras por quartis de renda e complexidade.                                        | Variável dependente: Índice de Gini (PNADC/IBGE). Variável independente: Índice de Complexidade Econômica (ICE) (DataViva/Método dos Reflexos). Controles: PIB per capita (IBGE), População (IBGE), Abertura Comercial (COMEXSTAT), Capital Humano (PNAD), Gastos Governamentais (SICONFI). Período: 2012-2021. | Revelou uma correlação positiva estatisticamente significativa entre complexidade e desigualdade na amostra global (indica que regiões mais complexas são mais desiguais). No entanto, encontrou indícios de uma relação de U invertido (não linear), onde níveis muito altos de complexidade tendem a reduzir a desigualdade.                                                                                                                   |
 :::
 
+::: {.notes}
+
+Nós selecionamos alguns dos trabalhos que estudam a relação da complexidade com a desigualdade... 
+
+Os resultados encontrados diferem a depender da agragação utilizada e da metodologia empregada na pesquisa. 
+
+trabalhos como os de Hartmann, lee vu e Gosh... trabalham com dados de painel para países. 
+
+Hartmann usa Dados transversais agrupados  e efeitos fixos, e encontra uma relação negativa entre a complexidade e a desigualdade. Já Lee e Vu, usam Regrassão de MQO e Painel dinâmico, e enquanto os resultados de MQO mostram uma relação negativa e painel dinâmico revela uma relação positiva. Por fim, Gosh usa painel dinâmico e encontram uma relação negativa. 
+
+Já trabalhos que abordam o tema no nivel regional temos Bandeira Morais, Smolki e Freitas. Bandeira e Freitas analisam a relação no nível dos estados e Smolski no nível das microrregiões. 
+
+Bandeira = Relação de U invertido
+
+Freitas = RElação  positiva, mas na subamostra encontra U invertido em regiões com maior desigualdade inicial.
+
+Smolski = relação negativa.
+
+:::
+
 ## Dados: Variáveis {.sem-logo}
 
 ```{r, echo=FALSE, results='asis'}
@@ -226,6 +308,22 @@ linhas <- readLines("img/tab1_dados.html", warn = FALSE)
 linhas_limpas <- linhas[!grepl("<!DOCTYPE", linhas, ignore.case = TRUE)]
 cat(linhas_limpas, sep = "\n")
 ```
+
+::: {.notes}
+
+Variaveis dependentes ...
+
+Variável de interesse ICE-R e o termo quadrático
+
+Covaráveis... 
+
+Alternativas de capital humano... 
+
+Alternativas para captar a sofisticação da estrutura produtiva como CNAE e CBO...
+
+Dúvidas: o tratamento das variáveis de diversidade e Parc emp na indústria pode trazer resultados diferentes ? 
+
+:::
 
 ## Dados: Estatísticas Descritivas {visibility="hidden" .sem-logo}
 
@@ -360,6 +458,11 @@ $$
 ::: {.fragment .fade-in-then-out style="position: absolute; top: 52%; left: 25%; width: 50%; height: 32%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="3"}
 :::
 
+::: {.notes}
+
+Freitas et al. atribui o coeficiente positivo da educação “ao acesso desigual à educação entre os grupos econômicos, o que levaria a maiores disparidades no mercado de trabalho”.
+
+:::
 
 ## Modelo Estendido - EF {.sem-logo}
 
@@ -407,9 +510,75 @@ $$
 
 ## Robustez - Sub-amostras (a) {.sem-logo}
 
-\
+![](img/cluster_radar_correct.png){width="80%" fig-align="center"}
 
-![](img/cluster_radar.png){fig-align="center"}
+<!-- Retângulo 1 (Aparece no 1º clique e permanece) -->
+::: {.fragment .fade-in style="position: absolute; top: 39%; left: 35%; width: 15%; height: 15%; border: 3px solid #E41A1C; border-radius: 8px; z-index: 999; box-sizing: border-box; display: flex; align-items: center; justify-content: center; text-align: center; background-color: rgba(228, 26, 28, 0.1);" data-fragment-index="1"}
+
+::: {style="font-size: 0.45em;"}
+
+São Paulo, SP \
+Rio de Janeiro, RJ \
+Porto Alegre, RS \
+Campinas, SP \
+São José dos Campos, SP \
+
+:::
+
+:::
+
+<!-- Retângulo 2 (Aparece no 2º clique e permanece) -->
+::: {.fragment .fade-in style="position: absolute; top: 39%; left: 51%; width: 15%; height: 15%; border: 3px solid #377EB8; border-radius: 8px; z-index: 999; box-sizing: border-box; display: flex; align-items: center; justify-content: center; text-align: center; background-color: rgba(55, 126, 184, 0.1);" data-fragment-index="2"}
+
+::: {style="font-size: 0.45em;"}
+
+Cururupu, MA \
+Colinas, MA \
+Simplício Mendes, PI \
+Jeremoabo, BA \
+Viana, MA \
+
+:::
+
+:::
+
+<!-- Retângulo 3 (Aparece no 3º clique e permanece) -->
+::: {.fragment .fade-in style="position: absolute; top: 55%; left: 35%; width: 15%; height: 15%; border: 3px solid #7DEF4A; border-radius: 8px; z-index: 999; box-sizing: border-box; display: flex; align-items: center; justify-content: center; text-align: center; background-color: rgba(125, 239, 74, 0.1);" data-fragment-index="3"}
+
+::: {style="font-size: 0.45em;"}
+
+Blumenau, SC   
+Caxias do Sul, RS
+Novo Hamburgo - São Leopoldo, RS
+Limeira, SP        
+Piracicaba, SP
+
+:::
+
+:::
+
+<!-- Retângulo 4 (Aparece no 4º clique e permanece) -->
+::: {.fragment .fade-in style="position: absolute; top: 55%; left: 51%; width: 15%; height: 15%; border: 3px solid #e38630; border-radius: 8px; z-index: 999; box-sizing: border-box; display: flex; align-items: center; justify-content: center; text-align: center; background-color: rgba(227, 134, 48, 0.1);" data-fragment-index="4"}
+
+::: {style="font-size: 0.45em;"}
+
+Uruçuí, PI \
+Vacaria, RS \ 
+Água Boa, MT \       
+Coxim, MS \
+Confresa - Vila Rica, MT \
+
+:::
+
+:::
+
+:::{.notes}
+
+cluster 1: Perfil: Regiões metropolitanas e polos urbanos
+
+Cluster 2: Regiões de Menor Desenvolvimento Econômico e Populacional
+
+:::
 
 ## Robustez - Sub-amostras (b) {#sub-amostras .sem-logo}
 
@@ -453,9 +622,9 @@ $$
 ::: {.fragment .fade-in-then-out style="position: absolute; top: 72.5%; left: 14.5%; width: 71%; height: 24.5%; border: 3px solid #ff0000; border-radius: 8px; z-index: 999; box-sizing: border-box;" data-fragment-index="5"}
 :::
 
-## Considerações Finais {.sem-logo}
+## Considerações Preliminares {.sem-logo}
 
--   [**Proposta:** Estudar a relação entre a *complexidade econômica* e a *desigualdade de renda* no **mercado formal de trabalho** nas **regiões imediatas** do Brasil no período de **2003 a 2023**, através dos **microsdados da RAIS**;]{.font-small}
+-   [**Proposta:** Estudar a relação entre a *complexidade econômica* e a *desigualdade de renda* no **mercado formal de trabalho** nas **regiões imediatas** do Brasil no período de **2003 a 2023**, através dos **microdados da RAIS**;]{.font-small}
 
 -   [**Arcabouço Teórico:** Estruturalismo Latino-Americano, o Novo Desenvolvimentismo e a Complexidade econômica;]{.font-small}
 
@@ -478,6 +647,12 @@ $$
 -   Capítulo 3 com a análise exploratória;
 
 -   Explorar diferentes variáveis e modelos na análise empírica do capítulo 4.
+
+::: {.notes}
+
+A análise exploratória será de grande importância para trazer argumentos para a discussão e entendimento dos resultados da análise empírica.
+
+:::
 
 # Obrigado! {.sem-logo}
 
